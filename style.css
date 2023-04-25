@@ -5,17 +5,26 @@ body, html {
     background-image: url(https://www.ginjfo.com/wp-content/uploads/2017/03/Blue_Screen_of_Life-.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; 
+    background-size: cover;     
 }
+#habilidades {
+    font-size: 20px;
+    margin: 30px;    
+    width: 600px;
+    text-align: center;
+}
+   
 #texto_cabeçalho {
-    margin-left: 40px;
+    margin-left: 230px;
     font-size: 20px;
 }
+
 
 #habilidades p{
     margin-left: 40px ; 
     font-size: 20px;   
 }
-#habilidades {
-    font-size: 20px;
+
+#foto-perfil {
+    width: 200px;
 }
