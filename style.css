@@ -57,9 +57,7 @@ body, html {
 .foto{
     border: 1px solid blue;
     width: 12%;
-    float: left;    
-    display:inline-block   
-    
+    float: left;   
 }
 .foto img{
     width: 250px;
