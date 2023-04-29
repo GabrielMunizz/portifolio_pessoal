@@ -1,5 +1,8 @@
 * {
-    padding: 0;
+    padding: 0;    
+}
+body {
+    background-color: #252323;
 }
 body, html {
     margin: 0px;
@@ -22,10 +25,6 @@ body, html {
     src: url(/fonts/UrbRapper.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
-}
-main {
-    background-color: #252323;
-    height: 100%;
 }
 #content {    
     font-family: 'Graffiti';
@@ -85,8 +84,9 @@ main {
     display: flex;
     justify-content: space-between;
 }
-#sobre {    
+#sobre {      
     width: 100%;
+    height: 90px;
     text-align: center;    
     font-size: 55px;
     margin: 0;
@@ -101,7 +101,8 @@ main {
 .sobre_mim {    
     width: 100vw;
     height: 470px;
-    margin: 0 auto;    
+    margin: 0 auto;
+    line-height: 30px;    
 }
 .content-2 {
     top: 110px;
@@ -118,11 +119,10 @@ main {
 .foto img{
     width: 250px;
     border-radius: 20%;
-    border: 2px solid #black;
+    border: 2px solid black;
 }
 .texto_sobre_mim {
-    position: relative;
-    top: 93.5px;
+    position: relative;    
     font-family: 'Quicksand', sans-serif;   
     color: #efefef;
     text-align: left;
@@ -131,11 +131,10 @@ main {
     width: 60%;
     height: 235px;    
 }
-#hard_skills {    
+#hard_skills, #hobbies {    
     text-align: center;
 }
-
-#hard_skills_text h2{        
+#hard_skills_text h2, #hobbies_text h2{        
     font-size: 55px;
     font-family: 'Graffiti';
     color: #8F00FF;
@@ -157,4 +156,15 @@ main {
 }
 #javascript_logo {
     width: 75px;    
+}
+#hobbies ul {
+    display: inline-block;
+    color: #efefef;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 20px;
+    text-align: left;
+}
+#hobbies ul li {
+    line-height: 35px;    
 }
