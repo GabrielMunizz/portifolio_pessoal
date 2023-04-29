@@ -1,4 +1,6 @@
-
+* {
+    padding: 0;
+}
 body, html {
     margin: 0px;
     width: 100vw;
@@ -21,7 +23,11 @@ body, html {
     font-weight: normal;
     font-style: normal;
 }
-#content {
+main {
+    background-color: #252323;
+    height: 100%;
+}
+#content {    
     font-family: 'Graffiti';
     color: #8F00FF;
     text-shadow: 
@@ -79,41 +85,76 @@ body, html {
     display: flex;
     justify-content: space-between;
 }
-.sobre_mim {
-    border: 1px solid red;
+#sobre {    
+    width: 100%;
+    text-align: center;    
+    font-size: 55px;
+    margin: 0;
+    font-family: 'Graffiti';
+    color: #8F00FF;
+    text-shadow: 
+    -1px -1px 0px #FFF, 
+    -1px 1px 0px #FFF,      
+    1px -1px 0px #FFF,    
+    1px 0px 0px #FFF;
+}
+.sobre_mim {    
     width: 100vw;
     height: 470px;
-    margin: 0 auto;
-    background-color: #252323;
+    margin: 0 auto;    
 }
 .content-2 {
-    top: 70px;
-    position: relative;    
-    border: 1px solid yellow;
+    top: 110px;
+    position: relative;   
     width: 60vw;
     height: 400px;
     align-items: center;
     margin: 0 auto;
 }
-.foto{
-    border: 1px solid blue;
+.foto{    
     width: 20%;
     float: left;   
 }
 .foto img{
     width: 250px;
     border-radius: 20%;
-    border: 1px solid #252323;
+    border: 2px solid #black;
 }
 .texto_sobre_mim {
     position: relative;
-    top: 123.5px;
-    font-family: 'Quicksand', sans-serif; 
-    border: 1px solid purple;
+    top: 93.5px;
+    font-family: 'Quicksand', sans-serif;   
     color: #efefef;
     text-align: left;
     display: inline;
     float: left;
-    width: 70%;
-    
+    width: 60%;
+    height: 235px;    
+}
+#hard_skills {    
+    text-align: center;
+}
+
+#hard_skills_text h2{        
+    font-size: 55px;
+    font-family: 'Graffiti';
+    color: #8F00FF;
+    text-shadow: 
+    -1px -1px 0px #FFF, 
+    -1px 1px 0px #FFF,      
+    1px -1px 0px #FFF,    
+    1px 0px 0px #FFF;    
+}
+#hard_skills ul li {
+    display: inline-block;
+    margin: 15px;
+}
+#html_logo {
+    width: 77px;
+}
+#css_logo {
+    width: 55px;
+}
+#javascript_logo {
+    width: 75px;    
 }
