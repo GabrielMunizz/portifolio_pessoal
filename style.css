@@ -1,0 +1,177 @@
+* {
+    padding: 0;    
+}
+body {
+    background-color: #252323;
+}
+body, html {
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;        
+}
+.header-1 {
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 65px;
+    background-color: #252323;
+    border-bottom: solid 5px #efefef;
+    display: flex;
+    justify-content:space-evenly;
+    z-index: 1;
+}
+@font-face {
+    font-family: 'Graffiti';
+    src: url(/fonts/UrbRapper.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+#content {    
+    font-family: 'Graffiti';
+    color: #8F00FF;
+    text-shadow: 
+    -1px -1px 0px #FFF, 
+    -1px 1px 0px #FFF,      
+    1px -1px 0px #FFF,    
+    1px 0px 0px #FFF;    
+}
+#titulo {
+    font-size: 25px;    
+    margin: 0 auto;
+    text-align: center;   
+    height: 60px;
+    display: flex;
+    width: 30%;  
+}
+#titulo h1 {
+    width: 100%;
+    margin: 0 auto;   
+    display: inline-block;
+    margin-top: 5px;           
+}
+.menu_left {       
+    height: 65px;
+    width: 25%;
+    position: static;
+    float: left;    
+    margin: 0 auto;           
+}
+.menu_right {    
+    position: static;
+    height: 65px;
+    width: 25%;    
+    float: right;
+    margin: 0 auto;    
+    
+}
+.menu_left ul, .menu_right ul {
+    display: flex;
+    justify-content: space-around;    
+    padding: 0;
+}
+.menu_left ul li, .menu_right ul li {
+    
+    display: inline-block;
+    margin: 0 auto;     
+    text-align: center;
+    padding: 0 auto;
+            
+}
+.menu_left ul li a, .menu_right ul li a {    
+    text-decoration: none;    
+    font-size: 25px;
+    text-transform: uppercase;        
+    display: flex;
+    justify-content: space-between;
+}
+#sobre {      
+    width: 100%;
+    height: 90px;
+    text-align: center;    
+    font-size: 55px;
+    margin: 0;
+    font-family: 'Graffiti';
+    color: #8F00FF;
+    text-shadow: 
+    -1px -1px 0px #FFF, 
+    -1px 1px 0px #FFF,      
+    1px -1px 0px #FFF,    
+    1px 0px 0px #FFF;
+}
+.sobre_mim {    
+    width: 100vw;
+    height: 470px;
+    margin: 0 auto;
+    line-height: 30px;    
+}
+.content-2 {
+    top: 110px;
+    position: relative;   
+    width: 60vw;
+    height: 400px;
+    align-items: center;
+    margin: 0 auto;
+}
+.foto{    
+    width: 20%;
+    float: left;   
+}
+.foto img{
+    width: 250px;
+    border-radius: 20%;
+    border: 2px solid black;
+}
+.texto_sobre_mim {
+    position: relative;    
+    font-family: 'Quicksand', sans-serif;   
+    color: #efefef;
+    text-align: left;
+    display: inline;
+    float: left;
+    width: 60%;
+    height: 235px;    
+}
+#hard_skills, #hobbies {    
+    text-align: center;
+}
+#hard_skills_text h2, #hobbies_text h2{        
+    font-size: 55px;
+    font-family: 'Graffiti';
+    color: #8F00FF;
+    text-shadow: 
+    -1px -1px 0px #FFF, 
+    -1px 1px 0px #FFF,      
+    1px -1px 0px #FFF,    
+    1px 0px 0px #FFF;    
+}
+#hard_skills ul li {
+    display: inline-block;
+    margin: 15px;
+}
+#html_logo {
+    width: 77px;
+}
+#css_logo {
+    width: 55px;
+}
+#javascript_logo {
+    width: 75px;    
+}
+#hobbies ul {
+    display: inline-block;
+    color: #efefef;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 20px;
+    text-align: left;
+}
+#hobbies ul li {
+    line-height: 45px;    
+}
+#yoda {
+    top: 10px;
+    position: relative;
+    width: 40px;
+    margin-left: 15px;
+}
+
