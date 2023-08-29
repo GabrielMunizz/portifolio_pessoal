@@ -1,6 +1,15 @@
-const Home = () => {
+import Header from '../components/Header';
+import Main from '../components/Main';
+import Footer from '../components/Footer';
+import { HomeProps } from '../types';
+
+const Home = ({ toggleTheme, isDark }: HomeProps) => {
   return(
-    <h1>Home</h1>
+    <>
+      <Header toggleTheme={ toggleTheme } isDark={ isDark }/>
+      <Main />
+      <Footer />
+    </>
   )
 }
 
