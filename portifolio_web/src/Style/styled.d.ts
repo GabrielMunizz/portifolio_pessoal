@@ -5,6 +5,7 @@ declare module 'styled-components' {
     colors: {
       backgroundColor: string,
       text_shadow: string,
+      themeBtn_color: string,
       main_text_color: string,
       secondary_text_color: string,
       footer_background: string,
