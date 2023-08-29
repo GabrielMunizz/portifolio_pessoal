@@ -6,7 +6,7 @@ export const Header = styled.header`
   justify-content: space-between;
   align-items: center;  
   height: 100px;
-  margin: 0 20px;
+  
 
 & button {
   background-color: transparent;
@@ -62,7 +62,7 @@ export const Main = styled.main`
   align-items: center;
   width: 100%;
   height: 40vh;
-  margin: 0 20px;
+  
 
   & .mainContent {
     display: flex;
@@ -88,6 +88,11 @@ export const Main = styled.main`
 
   & .introContainer h1 {
     font-size: 40px;
+  }
+
+  & .introContainer a {
+    text-decoration: none;
+    color: ${(props) => props.theme.colors.text_details};
   }
 `
 export const Aside = styled.aside`
@@ -116,6 +121,6 @@ export const Aside = styled.aside`
     text-decoration: none;
     color: ${(props) => props.theme.colors.text_details};
     border: 2px solid ${(props) => props.theme.colors.text_details};
-    padding: 10px;        
+    padding: 10px;
   }  
 `

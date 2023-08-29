@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Projects from './pages/Projects'
+import FullBio from './pages/FullBio'
 import { darkMode, lightMode } from './Style/themes'
 import { useState } from 'react'
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/' element={ <Home toggleTheme={ toggleTheme } isDark={ isDark } /> } />
         <Route path='/projects' element={ <Projects /> } />
         <Route path='/contact' element={ <Contact />} />
+        <Route path='/fullbio' element={ <FullBio />} />
       </Routes>
     </ThemeProvider>
   )

@@ -14,5 +14,6 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${(props) => props.theme.colors.backgroundColor};
     color: ${(props) => props.theme.colors.main_text_color};
     transition: 0.3s ease;
+    padding: 0 35px;
  }
 `

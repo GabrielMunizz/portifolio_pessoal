@@ -1,7 +1,6 @@
 export const darkMode = {
   colors: {
     backgroundColor: "#2E2F34",
-    text_shadow: "-1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black, 1px 1px 2px black",
     themeBtn_color: "#E1A037",
     text_details:  "#E1A037",
     main_text_color: "#DADADA",
@@ -14,7 +13,6 @@ export const darkMode = {
 export const lightMode = {
   colors: {
     backgroundColor: "#fff",
-    text_shadow: "-1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black, 1px 1px 2px black",
     themeBtn_color: "#000",
     text_details:  "#BC6AF4",
     main_text_color: "#000",
