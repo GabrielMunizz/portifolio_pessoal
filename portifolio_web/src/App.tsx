@@ -2,6 +2,8 @@ import { Routes, Route } from 'react-router-dom'
 import { GlobalStyle } from './Style/globalStyle'
 import { ThemeProvider } from 'styled-components'
 import Home from './pages/Home'
+import Contact from './pages/Contact'
+import Projects from './pages/Projects'
 import { darkMode, lightMode } from './Style/themes'
 import { useState } from 'react'
 
@@ -19,6 +21,8 @@ function App() {
       <GlobalStyle />
       <Routes>
         <Route path='/' element={ <Home toggleTheme={ toggleTheme } isDark={ isDark } /> } />
+        <Route path='/projects' element={ <Projects /> } />
+        <Route path='/contact' element={ <Contact />} />
       </Routes>
     </ThemeProvider>
   )
