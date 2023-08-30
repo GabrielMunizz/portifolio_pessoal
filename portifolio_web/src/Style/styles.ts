@@ -81,7 +81,8 @@ export const Main = styled.main`
   }
 
   & .introContainer {
-    max-width: 15%;
+    max-width: 15%;    
+    text-overflow: ellipsis;
   }
 
   & .introContainer h1 {
@@ -122,6 +123,7 @@ export const Aside = styled.aside`
     padding: 10px;
   } 
 `
+
 export const H2 = styled.h2`
   color: ${(props) => props.theme.colors.text_details};
 `
@@ -133,9 +135,36 @@ export const Footer = styled.footer`
   align-items: center;
   background-color: ${((props) => props.theme.colors.footer_background)};
   width: 100%;
-  min-height: 39.80vh;
+  height: 39.80vh;
+
+  & .hardSkillsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+  }
 
   & h2 {
     margin-top: 20px;    
+  }
+`
+export const HardSkillsCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 230px;
+  margin: 10px;
+  padding: 10px;
+  background-color: ${(props) => props.theme.colors.backgroundColor};
+  color: ${(props) => props.theme.colors.text_details};
+  border-radius: 8px;
+
+  & img {
+    width: 150px;
+    height: 150px;
   }
 `
