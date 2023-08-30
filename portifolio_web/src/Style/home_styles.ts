@@ -160,8 +160,13 @@ export const HardSkillsCard = styled.div`
   margin: 10px;
   padding: 10px;
   background-color: ${(props) => props.theme.colors.backgroundColor};
-  color: ${(props) => props.theme.colors.text_details};
+  color: ${(props) => props.theme.colors.main_text_color};
   border-radius: 8px;
+  transition: 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   & img {
     width: 150px;

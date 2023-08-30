@@ -1,4 +1,4 @@
-import * as S from '../Style/styles';
+import * as S from '../Style/home_styles';
 import { hardSkills } from '../assets/hardSkills';
 import HardSkillsCard from './HardSkillsCard';
 

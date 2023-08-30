@@ -5,7 +5,7 @@ export const darkMode = {
     text_details:  "#E1A037",
     main_text_color: "#DADADA",    
     footer_background: "#34353A",
-    photo_background: "#2B2B33",
+    photo_background: "#34353A",
   }
 }
 
@@ -16,6 +16,6 @@ export const lightMode = {
     text_details:  "#A327F1",
     main_text_color: "#000",    
     footer_background: "#202124",
-    photo_background: "#2B2B33",
+    photo_background: "#202124",
   }
 }

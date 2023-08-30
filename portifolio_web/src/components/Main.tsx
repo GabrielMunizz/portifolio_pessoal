@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import * as S from '../Style/styles';
+import * as S from '../Style/home_styles';
 
 const Main = () => {
   return (
@@ -12,7 +12,9 @@ const Main = () => {
         </div>
         <hr />
         <div className="professionalContainer">
-          <h3>Front-End Developer</h3>
+          <h3>- Front-End Web Developer</h3>
+          <h3>- Guitar Enthusiast</h3>
+          <h3>- Food Alchemist</h3>
         </div>
         <div className="contactContainer">
           <Link to="/contact">CONTACT ME</Link>

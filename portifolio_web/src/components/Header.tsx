@@ -2,7 +2,7 @@ import { HomeProps } from '../types';
 import { MdOutlineLightMode, MdDarkMode } from 'react-icons/md';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import { Link } from 'react-router-dom';
-import * as S from '../Style/styles'
+import * as S from '../Style/home_styles'
 
 const Header = ({ toggleTheme, isDark }: HomeProps) => {
   return(
