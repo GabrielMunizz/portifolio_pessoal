@@ -1,6 +1,15 @@
+import * as S from '../Style/styles'
+
 const Footer = () => {
   return(
-    <h3>Footer</h3>
+    <S.Footer>
+      <div>
+        <S.H2>Hard Skills</S.H2>
+      </div>
+      <div>
+        
+      </div>
+    </S.Footer>
   )
 }
 

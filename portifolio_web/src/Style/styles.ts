@@ -6,6 +6,7 @@ export const Header = styled.header`
   justify-content: space-between;
   align-items: center;  
   height: 100px;
+  padding: 0 35px;
   
 
 & button {
@@ -61,7 +62,8 @@ export const Main = styled.main`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 40vh;
+  height: 50vh;
+  padding: 0 35px;
   
 
   & .mainContent {
@@ -80,10 +82,6 @@ export const Main = styled.main`
 
   & .introContainer {
     max-width: 15%;
-  }
-
-  & .introContainer h2 {
-    color: ${(props) => props.theme.colors.text_details}
   }
 
   & .introContainer h1 {
@@ -122,5 +120,22 @@ export const Aside = styled.aside`
     color: ${(props) => props.theme.colors.text_details};
     border: 2px solid ${(props) => props.theme.colors.text_details};
     padding: 10px;
-  }  
+  } 
+`
+export const H2 = styled.h2`
+  color: ${(props) => props.theme.colors.text_details};
+`
+
+export const Footer = styled.footer`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: ${((props) => props.theme.colors.footer_background)};
+  width: 100%;
+  min-height: 39.80vh;
+
+  & h2 {
+    margin-top: 20px;    
+  }
 `

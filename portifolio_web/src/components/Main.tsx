@@ -23,7 +23,7 @@ const Main = () => {
           <img src="" alt="" />
         </div>
         <div className="introContainer">
-          <h2>Introduction:</h2>
+          <S.H2>Introduction:</S.H2>
           <h1>Front-End Web Developer</h1>
           <h4>
             After 10 years working in business administration, I've decided to
