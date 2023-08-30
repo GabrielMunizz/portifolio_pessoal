@@ -3,8 +3,7 @@ import Footer from '../components/Footer';
 
 const Home = () => {
   return(
-    <>
-      {/* <Header toggleTheme={ toggleTheme } isDark={ isDark }/> */}
+    <>      
       <Main />
       <Footer />
     </>
