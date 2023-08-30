@@ -1,4 +1,4 @@
-export type HomeProps = {
+export type HeaderProps = {
   toggleTheme: () => void;
   isDark: boolean;
 };

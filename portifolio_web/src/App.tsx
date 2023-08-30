@@ -7,6 +7,7 @@ import Projects from './pages/Projects'
 import FullBio from './pages/FullBio'
 import { darkMode, lightMode } from './Style/themes'
 import { useState } from 'react'
+import Layout from './components/Layout'
 
 function App() {
   const [isDark, setIsDark] = useState<boolean>(true);
@@ -21,10 +22,12 @@ function App() {
     <ThemeProvider theme={selectedTheme}>
       <GlobalStyle />
       <Routes>
-        <Route path='/' element={ <Home toggleTheme={ toggleTheme } isDark={ isDark } /> } />
-        <Route path='/projects' element={ <Projects /> } />
-        <Route path='/contact' element={ <Contact />} />
-        <Route path='/fullbio' element={ <FullBio />} />
+        <Route path='/' element={<Layout toggleTheme={ toggleTheme } isDark={ isDark }/>}>
+          <Route index element={ <Home />} />
+          <Route path='/projects' element={ <Projects /> } />
+          <Route path='/contact' element={ <Contact />} />
+          <Route path='/fullbio' element={ <FullBio />} />
+        </Route>
       </Routes>
     </ThemeProvider>
   )
