@@ -1,6 +1,16 @@
+import * as S from '../Style/styles';
+import ProjectsCard from '../components/ProjectsCard';
+
 const Projects = () => {
   return(
-    <h1>Projects page</h1>
+   <S.Main>
+    <header>
+      <h1>Projects:</h1>
+    </header>
+    <section>
+      <ProjectsCard />
+    </section>
+   </S.Main>
   )
 }
 
