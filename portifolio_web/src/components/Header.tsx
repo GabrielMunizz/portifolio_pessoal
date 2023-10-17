@@ -1,10 +1,10 @@
-import { HomeProps } from '../types';
+import { HeaderProps } from '../types';
 import { MdOutlineLightMode, MdDarkMode } from 'react-icons/md';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import { Link } from 'react-router-dom';
 import * as S from '../Style/styles'
 
-const Header = ({ toggleTheme, isDark }: HomeProps) => {
+const Header = ({ toggleTheme, isDark }: HeaderProps) => {
   return(
     <S.Header>
       <button onClick={toggleTheme}>{ isDark ? <MdOutlineLightMode /> : <MdDarkMode /> }</button>

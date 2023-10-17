@@ -6,7 +6,7 @@ export const Header = styled.header`
   justify-content: space-between;
   align-items: center;  
   height: 100px;
-  padding: 0 35px;
+  padding: 0 20rem;
   
 
 & button {
@@ -73,11 +73,22 @@ export const Main = styled.main`
     align-items: flex-start;
     width: 89%;
     height: 100%;
-    transform: translateX(-10%)
+    transform: translateX(-10%);    
   }
 
   & .imgContainer {
-    min-width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 65%;    
+    height: 400px;
+    
+  }
+
+  .imgContainer img {
+    width: 380px;
+    height: 480px;
+    border-radius: 50%;
   }
 
   & .introContainer {
@@ -101,6 +112,7 @@ export const Aside = styled.aside`
   align-items: left;
   min-width: 10%; 
   height: 100%;
+  margin-left: 12%;
  
   & .nameContainer h1 {
     font-size: 45px;

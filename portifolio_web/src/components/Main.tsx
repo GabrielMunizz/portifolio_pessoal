@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import photo from '../images/foto_port_filtro-fotor-bg-remover-20231017175655.png';
 import * as S from '../Style/styles';
 
 const Main = () => {
@@ -22,7 +23,7 @@ const Main = () => {
       </S.Aside>
       <section className="mainContent">
         <div className="imgContainer">
-          <img src="" alt="" />
+          <img src={ photo } alt="photo" />
         </div>
         <div className="introContainer">
           <S.H2>Introduction:</S.H2>
