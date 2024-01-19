@@ -8,8 +8,10 @@ import FullBio from './pages/FullBio'
 import { darkMode, lightMode } from './Style/themes'
 import { useState } from 'react'
 import Layout from './components/Layout'
+import PortifolioContext from './context/PortifolioContext'
 
 function App() {
+  const [isBr, setIsBr] = useState(false);
   const [isDark, setIsDark] = useState<boolean>(true);
 
   const selectedTheme = isDark ? darkMode : lightMode;
@@ -19,17 +21,19 @@ function App() {
   }
   
   return (
-    <ThemeProvider theme={selectedTheme}>
-      <GlobalStyle />
-      <Routes>
-        <Route path='/' element={<Layout toggleTheme={ toggleTheme } isDark={ isDark }/>}>
-          <Route index element={ <Home />} />
-          <Route path='/projects' element={ <Projects /> } />
-          <Route path='/contact' element={ <Contact />} />
-          <Route path='/fullbio' element={ <FullBio />} />
-        </Route>
-      </Routes>
-    </ThemeProvider>
+    <PortifolioContext.Provider value={{isBr, setIsBr}}>
+      <ThemeProvider theme={selectedTheme}>
+        <GlobalStyle />
+        <Routes>
+          <Route path='/' element={<Layout toggleTheme={ toggleTheme } isDark={ isDark }/>}>
+            <Route index element={ <Home />} />
+            <Route path='/projects' element={ <Projects /> } />
+            <Route path='/contact' element={ <Contact />} />
+            <Route path='/fullbio' element={ <FullBio />} />
+          </Route>
+        </Routes>
+      </ThemeProvider>
+    </PortifolioContext.Provider>
   )
 }
 

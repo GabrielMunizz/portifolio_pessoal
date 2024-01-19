@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom';
+import applicationTexts from '../assets/applicationTexts';
 import photo from '../images/foto_port_filtro-fotor-bg-remover-20231017175655.png';
 import * as S from '../Style/styles';
+import { useContext } from 'react';
+import PortifolioContext from '../context/PortifolioContext';
+
 
 const Main = () => {
+  const { isBr } = useContext(PortifolioContext);
+  const { eVersion, ptVersion } = applicationTexts;
   return (
     <S.Main>
       <S.Aside>
@@ -13,12 +19,13 @@ const Main = () => {
         </div>
         <hr />
         <div className="professionalContainer">
-          <h3>- Front-End Web Developer</h3>
-          <h3>- Guitar Enthusiast</h3>
-          <h3>- Food Alchemist</h3>
+          {
+            isBr ? ptVersion.professional.map((prof, i) => <h3 key={i}>{prof}</h3>) 
+          : eVersion.professional.map((prof, i) => <h3 key={i}>{prof}</h3>)
+          }
         </div>
         <div className="contactContainer">
-          <Link to="/contact">CONTACT ME</Link>
+          <Link to="/contact">{ isBr ? ptVersion.contact : eVersion.contact }</Link>
         </div>
       </S.Aside>
       <section className="mainContent">
@@ -26,15 +33,12 @@ const Main = () => {
           <img src={ photo } alt="photo" />
         </div>
         <div className="introContainer">
-          <S.H2>Introduction:</S.H2>
-          <h1>Front-End Web Developer</h1>
+          <S.H2>{ isBr ? ptVersion.intro.head : eVersion.intro.head }</S.H2>
+          <h1>{ isBr ? ptVersion.intro.title : eVersion.intro.title }</h1>
           <h4>
-            After 10 years working in business administration, I've decided to
-            explore my passion for technology and embark on a new professional
-            journey. In 2019, I've made a decision to take a break and reflect
-            on my goals and interests...
+            { isBr ? ptVersion.intro.bioPreview : eVersion.intro.bioPreview }
           </h4>
-          <Link to="/fullbio">{`-> ...See full bio.`}</Link>
+          <Link to="/fullbio">{ isBr ? ptVersion.seeFullBio : eVersion.seeFullBio }</Link>
         </div>
       </section>
     </S.Main>
