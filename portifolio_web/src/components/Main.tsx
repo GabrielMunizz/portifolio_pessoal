@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import applicationTexts from '../assets/applicationTexts';
 import photo from '../images/foto_port_filtro-fotor-bg-remover-20231017175655.png';
-import * as S from '../Style/styles';
+import * as S from '../Style/mainStyle';
 import { useContext } from 'react';
 import PortifolioContext from '../context/PortifolioContext';
 

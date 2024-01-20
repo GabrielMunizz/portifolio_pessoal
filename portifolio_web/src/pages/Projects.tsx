@@ -1,4 +1,4 @@
-import * as S from '../Style/styles';
+import * as S from '../Style/mainStyle';
 import ProjectsCard from '../components/ProjectsCard';
 
 const Projects = () => {

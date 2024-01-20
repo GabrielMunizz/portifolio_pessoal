@@ -1,9 +1,10 @@
 import * as S from '../Style/styles';
+import { Main } from '../Style/mainStyle';
 import { AiFillContacts } from 'react-icons/ai';
 
 const Contact = () => {
   return(
-    <S.Main>
+    <Main>
       <S.ContactSection>
         <S.H2><span><AiFillContacts />Contact:</span></S.H2>
         <div>
@@ -12,7 +13,7 @@ const Contact = () => {
           <h4>Phone: +55 32 98486-3437</h4>
         </div>
       </S.ContactSection>
-    </S.Main>
+    </Main>
   )
 }
 

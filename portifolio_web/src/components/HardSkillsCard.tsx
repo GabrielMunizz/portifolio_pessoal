@@ -1,5 +1,5 @@
 import { HardSkillsType } from '../types';
-import * as S from '../Style/styles'
+import * as S from '../Style/hardSkillsStyles'
 
 type CardProps = {
   skill: HardSkillsType;

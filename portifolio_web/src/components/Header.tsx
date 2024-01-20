@@ -2,7 +2,7 @@ import { HeaderProps } from '../types';
 import { MdOutlineLightMode, MdDarkMode } from 'react-icons/md';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import { Link } from 'react-router-dom';
-import * as S from '../Style/styles'
+import * as S from '../Style/headerStyle'
 import states from '../images/american.png'
 import br from '../images/br.jpeg'
 import { useContext } from 'react';
