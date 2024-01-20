@@ -29,7 +29,7 @@ const Header = ({ toggleTheme, isDark }: HeaderProps) => {
           className='flags'
           onClick={ versionHandler }>
           <img             
-            src={isBr ? br : states} 
+            src={isBr ? states : br} 
             alt="flags" />
         </button>
         </div>

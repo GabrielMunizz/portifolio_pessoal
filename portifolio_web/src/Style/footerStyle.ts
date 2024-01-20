@@ -7,7 +7,7 @@ export const Footer = styled.footer`
   align-items: center;
   background-color: ${(props) => props.theme.colors.footer_background};
   width: 100%;
-  height: 39.8vh;
+  height: 100%;
 
   & .hardSkillsContainer {
     display: flex;
@@ -19,5 +19,13 @@ export const Footer = styled.footer`
 
   & h2 {
     margin-top: 20px;
+  }
+
+  @media (min-width: 4860px) and (min-height: 1495px) {
+    font-size: 1.5rem;
+
+    & .hardSkillsContainer {
+      height: 25.25rem;
+    }
   }
 `;

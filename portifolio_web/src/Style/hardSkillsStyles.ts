@@ -23,4 +23,15 @@ export const HardSkillsCard = styled.div`
     width: 150px;
     height: 150px;
   }
+
+  @media (min-width: 4860px) and (min-height: 1495px) {
+    width: 300px;
+    height: 330px;
+    font-size: 1.2rem;
+
+    & img {
+    width: 250px;
+    height: 250px;
+  }
+  }
 `;

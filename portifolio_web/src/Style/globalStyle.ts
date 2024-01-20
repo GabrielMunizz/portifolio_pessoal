@@ -10,9 +10,10 @@ export const GlobalStyle = createGlobalStyle`
 
  body {
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     background-color: ${(props) => props.theme.colors.backgroundColor};
     color: ${(props) => props.theme.colors.main_text_color};
-    transition: 0.3s ease;    
+    transition: 0.3s ease;
+    background-attachment: fixed;
  }
 `

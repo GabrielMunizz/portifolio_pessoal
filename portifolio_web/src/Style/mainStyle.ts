@@ -6,8 +6,9 @@ export const Main = styled.main`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50vh;
+  height: 100%;
   padding: 0 35px;
+  margin-bottom: 7.88rem;
 
   & .mainContent {
     display: flex;
@@ -47,14 +48,20 @@ export const Main = styled.main`
     text-decoration: none;
     color: ${(props) => props.theme.colors.text_details};
   }
+
+  @media (min-width: 4860px) and (min-height: 1495px) {
+    margin-bottom: 30rem;
+  }
 `;
+
+
 export const Aside = styled.aside`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: left;
   min-width: 15%;
-  height: 100%;
+  height: 26rem;
   margin-left: 12%;
   
 
