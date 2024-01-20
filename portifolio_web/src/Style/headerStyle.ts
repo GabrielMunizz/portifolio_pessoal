@@ -13,7 +13,7 @@ export const Header = styled.header`
     align-items: center;
     justify-content: center;
     padding-bottom: 0.7rem;
-    margin-left: 1.2rem;
+    margin-left: 1.5rem;
     border: none;
     transition: 0.3s ease;
   }
@@ -74,5 +74,32 @@ export const Header = styled.header`
   & .socialContainer a:hover {
     transform: scale(1.1);
     border: none;
+  }
+
+  @media (min-width: 4860px) and (min-height: 1495px) {
+    height: 200px;
+    padding: 0 40rem;
+
+    & button {
+      font-size: 55px;
+    }
+
+    & .navbar a {
+      font-size: 35px;
+    }
+
+    & .socialContainer a {
+      font-size: 50px;
+    }
+
+    & .flags {
+      justify-content: center;
+      padding-bottom: 0;
+    }
+
+    & .flags img {
+      width: 48px;
+      height: 45px;      
+    }
   }
 `;

@@ -3,12 +3,11 @@ import { styled } from 'styled-components';
 export const Main = styled.main`
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
   height: 100%;
-  padding: 0 35px;
-  margin-bottom: 7.88rem;
+  padding: 0 35px;  
 
   & .mainContent {
     display: flex;
@@ -16,16 +15,16 @@ export const Main = styled.main`
     justify-content: center;
     align-items: flex-start;
     width: 89%;
-    height: 100%;
+    height: 33.4rem;
     transform: translateX(-10%);
   }
 
   & .imgContainer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-width: 65%;
-    height: 400px;
+    height: 100%;
   }
 
   .imgContainer img {
@@ -50,7 +49,25 @@ export const Main = styled.main`
   }
 
   @media (min-width: 4860px) and (min-height: 1495px) {
-    margin-bottom: 30rem;
+    margin-bottom: 18.2rem;
+    padding: 0 75px;
+
+    & .introContainer  {
+      height: 600px;
+    }
+
+    & .introContainer h2 {
+      font-size: 35px;
+    }
+
+    & .introContainer h1 {
+      font-size: 50px;
+    }
+
+    & .introContainer h4, a {
+      font-size: 25px;
+    }
+   
   }
 `;
 
@@ -88,6 +105,22 @@ export const Aside = styled.aside`
     color: ${(props) => props.theme.colors.text_details};
     border: 2px solid ${(props) => props.theme.colors.text_details};
     padding: 10px;
+  }
+
+  @media (min-width: 4860px) and (min-height: 1495px) {
+    
+    
+    & .nameContainer h1 {
+        font-size: 52px;
+    }
+
+    & .professionalContainer {
+        font-size: 23px;   
+    }
+
+    & .contactContainer {
+        font-size: 30px;
+    }
   }
 `;
 
