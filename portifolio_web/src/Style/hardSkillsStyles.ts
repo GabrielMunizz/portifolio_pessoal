@@ -34,4 +34,49 @@ export const HardSkillsCard = styled.div`
     height: 250px;
   }
   }
+
+  @media (max-width: 1723px) and (max-height: 1050px) {
+    width: 150px;
+    height: 180px;
+    font-size: 0.8rem;
+
+    & img {
+    width: 100px;
+    height: 100px;
+    }
+  }
+
+  @media (max-width: 1185px) and (max-height: 805px) {
+    width: 100px;
+    height: 130px;
+    font-size: 0.6rem;
+
+    & img {
+    width: 60px;
+    height: 60px;
+    }
+  }
+
+  @media (max-width: 768px) and (max-height: 1024px) {
+    width: 100px;
+    height: 130px;
+    font-size: 0.6rem;
+
+    & img {
+    width: 60px;
+    height: 60px;
+    }
+  }
+
+  @media (max-width: 411px) and (max-height: 731px) {
+    width: 90px;
+    height: 95px;
+    font-size: 0.5rem;
+    flex-wrap: wrap;
+
+    & img {
+    width: 40px;
+    height: 40px;
+    }
+  }
 `;

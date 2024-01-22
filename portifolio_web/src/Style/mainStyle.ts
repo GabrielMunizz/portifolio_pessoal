@@ -66,8 +66,131 @@ export const Main = styled.main`
 
     & .introContainer h4, a {
       font-size: 25px;
+    }   
+  }
+
+  @media (max-width: 1723px) and (max-height: 1050px) {
+    & .imgContainer {
+      min-width: 55%;
     }
-   
+
+    & .imgContainer img {
+      width: 300px;
+      height: 400px
+    }
+
+    & .introContainer {
+      max-width: 23%;
+    }
+  }
+
+  @media (max-width: 1353px) and (max-height: 850px) {
+
+    & .imgContainer {
+      min-width: 50%;
+    }
+
+    & .imgContainer img {
+      width: 250px;
+      height: 350px
+    }
+
+    & .introContainer {
+      max-width: 30%;
+    }
+
+    & .introContainer h1 {
+     font-size: 35px;
+    }
+  }
+
+  @media (max-width: 1185px) and (max-height: 805px) {
+    & .introContainer h1 {
+     font-size: 28px;
+    }
+
+    & .introContainer h4 {
+     font-size: 14px;
+    }
+
+    & .mainContent {
+      height: 28rem;
+    }
+
+    & .imgContainer {
+      min-width: 50%;
+    }
+
+    & .imgContainer img {
+      width: 210px;
+      height: 300px
+    }
+  }
+
+  @media (max-width: 1024px) and (max-height: 720px) {
+    & .introContainer {
+        max-width: 35%
+    }
+  }
+
+  @media (max-width: 768px) and (max-height: 1024px) {
+    margin-top: 5rem;
+
+    & .mainContent {
+      height: 24rem;      
+      transform: translateX(0);
+    }
+    
+    & .introContainer {
+        max-width: 42%;
+        margin-left: 10%;
+    }
+
+    & .introContainer h1 {
+     font-size: 28px;
+    }
+
+    & .introContainer h4 {
+     font-size: 14px;
+    }
+
+    & .imgContainer {
+      min-width: 40%;
+    }
+
+    & .imgContainer img {
+      width: 180px;
+      height: 270px
+    }    
+  }
+
+  @media (max-width: 411px) and (max-height: 731px) {
+    margin-top: 20px;
+    padding: 0 1rem;
+       
+    
+    & .imgContainer img {
+      width: 100px;
+      height: 160px;
+      border-radius: 5%;
+    }
+
+    & .introContainer {
+        max-width: 42%;
+        margin-left: 8%;
+    }
+
+    & .introContainer h1 {
+     font-size: 18px;
+    }
+
+    & .introContainer h2, a {
+     font-size: 12px;
+    }
+
+    & .introContainer h4 {
+      font-size: 10px;
+    }
   }
 `;
 
@@ -120,6 +243,66 @@ export const Aside = styled.aside`
 
     & .contactContainer {
         font-size: 30px;
+    }
+  }
+
+  @media (max-width: 1353px) and (max-height: 850px) {
+    min-width: 25%;
+
+    & .nameContainer h1 {
+        font-size: 35px;
+    }
+
+    & .professionalContainer {
+        font-size: 14px;   
+    }
+
+    & .contactContainer {
+        font-size: 15px;
+    }
+  }
+
+  @media (max-width: 1185px) and (max-height: 805px) {
+    height: 23rem;    
+  }
+
+  @media (max-width: 1024px) and (max-height: 720px) {
+    & .nameContainer h1 {
+        font-size: 30px;
+    }
+  }
+
+  @media (max-width: 768px) and (max-height: 1024px) {
+    height: 22rem;
+    margin-left: 5%;
+
+    & .nameContainer h1 {
+        font-size: 25px;
+    }
+
+    & .professionalContainer {
+        font-size: 14px;   
+    }
+
+    & .contactContainer {
+        font-size: 15px;
+    }
+  }
+
+  @media (max-width: 411px) and (max-height: 731px) {
+    margin-left: 0;
+    min-width: 30%;
+
+    & .nameContainer h1 {
+        font-size: 20px;
+    }
+    
+    & .contactContainer a {
+        font-size: 12px;
+    }
+
+    & .professionalContainer h3 {
+        font-size: 12px;   
     }
   }
 `;

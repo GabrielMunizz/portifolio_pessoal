@@ -102,4 +102,81 @@ export const Header = styled.header`
       height: 45px;      
     }
   }
+
+  @media (max-width: 1930px) and (max-height: 1500px) {
+    padding: 0 14rem;
+  }
+
+  @media (max-width: 1353px) and (max-height: 850px) {
+    padding: 0 10rem;
+  }
+
+  @media (max-width: 1185px) and (max-height: 805px) {
+    height: 70px;
+    padding: 0 8.5rem;
+
+    & .navbar {
+      font-size: 18px;
+    }
+
+    & button {
+      font-size: 30px;
+    }
+
+    & .socialContainer a {
+      font-size: 25px;
+    }
+
+    & .flags img {
+      width: 28px;
+      height: 25px;      
+    }
+
+    & .flags {
+      padding-bottom: 1.5rem;
+      margin-left: 1.2rem;
+    }
+  }
+
+  @media (max-width: 768px) and (max-height: 1024px) {
+    padding: 0 4rem 0 2rem;
+  }
+
+  @media (max-width: 411px) and (max-height: 731px) {
+    padding: 0 2rem;
+    height: 50px;
+
+    & .navbar {
+      margin-top: 22px;
+      font-size: 15px;
+      min-width: 15%;
+    }
+
+    & .navbar a {
+      margin-left: 8px;
+    }
+
+    & .socialContainer {
+      margin-left: 1rem;
+      min-width: 10%;
+    }
+
+    & .socialContainer a {
+      font-size: 20px;
+    }
+
+    & .flags {
+      padding-bottom: 1.7rem;
+      margin-left: 0.5rem;
+    }
+
+    & .flags img {
+      width: 22px;
+      height: 19px;      
+    }
+
+    & button {
+      font-size: 22px;
+    }
+  }
 `;
