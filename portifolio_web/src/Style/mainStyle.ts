@@ -104,7 +104,7 @@ export const Main = styled.main`
     }
   }
 
-  @media (max-width: 1185px) and (max-height: 805px) {
+  @media (max-width: 1185px) and (max-height: 820px) {
     & .introContainer h1 {
      font-size: 28px;
     }
@@ -192,6 +192,31 @@ export const Main = styled.main`
       font-size: 10px;
     }
   }
+
+  @media (max-width: 375px) and (max-height: 812px) {
+    
+    & .imgContainer img {
+      width: 100px;
+      height: 160px;
+      border-radius: 5%;
+    }
+
+    & .introContainer h1 {
+     font-size: 18px;
+    }
+
+    & .introContainer h2, a {
+     font-size: 14px;
+    }
+
+    & .introContainer h4 {
+      font-size: 10px;
+    }
+  }
+
+  @media (max-width: 360px) and (max-height: 720px) {
+    margin-top: 10px;
+  }
 `;
 
 
@@ -230,9 +255,7 @@ export const Aside = styled.aside`
     padding: 10px;
   }
 
-  @media (min-width: 4860px) and (min-height: 1495px) {
-    
-    
+  @media (min-width: 4860px) and (min-height: 1495px) {    
     & .nameContainer h1 {
         font-size: 52px;
     }
@@ -262,7 +285,7 @@ export const Aside = styled.aside`
     }
   }
 
-  @media (max-width: 1185px) and (max-height: 805px) {
+  @media (max-width: 1185px) and (max-height: 820px) {
     height: 23rem;    
   }
 
@@ -303,6 +326,39 @@ export const Aside = styled.aside`
 
     & .professionalContainer h3 {
         font-size: 12px;   
+    }
+  }
+
+  @media (max-width: 375px) and (max-height: 812px) {
+    margin-left: 0;
+    min-width: 30%;
+
+    & .nameContainer h1 {
+        font-size: 20px;
+    }
+    
+    & .contactContainer a {
+        font-size: 10px;
+    }
+
+    & .professionalContainer h3 {
+        font-size: 12px;   
+    }
+  }
+
+  @media (max-width: 360px) and (max-height: 720px) {
+    width: 10%;  
+
+    & hr {
+      width: 50px;
+    }
+
+    & .nameContainer h1 {
+      font-size: 18px;
+    }
+
+    & .professionalContainer {
+        width: 80%;   
     }
   }
 `;

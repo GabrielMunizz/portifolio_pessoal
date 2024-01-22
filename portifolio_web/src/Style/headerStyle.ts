@@ -111,7 +111,7 @@ export const Header = styled.header`
     padding: 0 10rem;
   }
 
-  @media (max-width: 1185px) and (max-height: 805px) {
+  @media (max-width: 1185px) and (max-height: 820px) {
     height: 70px;
     padding: 0 8.5rem;
 
@@ -177,6 +177,54 @@ export const Header = styled.header`
 
     & button {
       font-size: 22px;
+    }
+  }
+
+  @media (max-width: 375px) and (max-height: 812px) {    
+    padding: 0 2rem;
+    height: 50px;
+
+    & .navbar {
+      margin-top: 22px;
+      font-size: 15px;
+      min-width: 15%;
+    }
+
+    & .navbar a {
+      margin-left: 8px;
+    }
+
+    & .socialContainer {
+      margin-left: 1rem;
+      min-width: 10%;
+    }
+
+    & .socialContainer a {
+      font-size: 20px;
+    }
+
+    & .flags {
+      padding-bottom: 1.7rem;
+      margin-left: 0.5rem;
+    }
+
+    & .flags img {
+      width: 22px;
+      height: 19px;      
+    }
+
+    & button {
+      font-size: 22px;
+    }
+  } 
+
+  @media (max-width: 360px) and (max-height: 720px) {
+    & button {
+      padding-top: 1rem;
+    }
+
+    & .navbar a {
+      height: 2rem;
     }
   }
 `;

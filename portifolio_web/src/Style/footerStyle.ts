@@ -35,7 +35,7 @@ export const Footer = styled.footer`
     min-height: 15rem;
   }
 
-  @media (max-width: 1185px) and (max-height: 805px) {
+  @media (max-width: 1185px) and (max-height: 820px) {
     min-height: 13rem;
 
     & .hardSkillsContainer {
@@ -52,6 +52,16 @@ export const Footer = styled.footer`
 
   @media (max-width: 411px) and (max-height: 731px) {
     width: 100%;
+    & .hardSkillsContainer {
+      flex-wrap: wrap;      
+    }
+
+    & h2 {
+      margin-top: 12px;
+    }
+  }
+
+  @media (max-width: 375px) and (max-height: 812px) {    
     & .hardSkillsContainer {
       flex-wrap: wrap;      
     }

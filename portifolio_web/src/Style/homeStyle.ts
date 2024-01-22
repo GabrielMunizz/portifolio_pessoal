@@ -16,4 +16,8 @@ export const Home = styled.section`
   @media (max-width: 411px) and (max-height: 731px) {
     min-height: calc(100vh - 50px);
   }
+
+  @media (max-width: 375px) and (max-height: 812px) {
+    min-height: calc(100vh - 50px);
+  }
 `

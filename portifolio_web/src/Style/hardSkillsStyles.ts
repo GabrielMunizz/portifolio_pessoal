@@ -46,7 +46,7 @@ export const HardSkillsCard = styled.div`
     }
   }
 
-  @media (max-width: 1185px) and (max-height: 805px) {
+  @media (max-width: 1185px) and (max-height: 820px) {
     width: 100px;
     height: 130px;
     font-size: 0.6rem;
@@ -69,6 +69,18 @@ export const HardSkillsCard = styled.div`
   }
 
   @media (max-width: 411px) and (max-height: 731px) {
+    width: 90px;
+    height: 95px;
+    font-size: 0.5rem;
+    flex-wrap: wrap;
+
+    & img {
+    width: 40px;
+    height: 40px;
+    }
+  }
+
+  @media (max-width: 375px) and (max-height: 812px) {
     width: 90px;
     height: 95px;
     font-size: 0.5rem;
