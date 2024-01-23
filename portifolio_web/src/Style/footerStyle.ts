@@ -16,7 +16,7 @@ export const Footer = styled.footer`
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   & h2 {
