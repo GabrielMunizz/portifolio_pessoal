@@ -269,5 +269,7 @@ export const Header = styled.header`
     }    
   } 
 
-  
+  @media (max-width: 285px) {
+    padding: 0.5rem;
+  }
 `;
