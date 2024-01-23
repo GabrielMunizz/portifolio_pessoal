@@ -227,4 +227,35 @@ export const Header = styled.header`
       height: 2rem;
     }
   }
+
+  @media (max-width: 320px) {    
+
+    & button {
+      font-size: 14px;
+    }
+
+    & .navbar a {
+      font-size: 12px;
+      height: 2.6rem;
+    }
+
+    & .socialContainer {
+      margin-left: 8px;
+    }
+
+    & .socialContainer a {
+      font-size: 16px;
+      margin-left: 2px;
+    }
+
+    & .flags {
+      padding-bottom: 1.6rem;
+      margin-left: 2px;
+    }
+
+    & .flags img {
+      width: 16px;
+      height: 15px;
+    }
+  }
 `;

@@ -164,6 +164,35 @@ export const Main = styled.main`
     }    
   }
 
+  @media (max-width: 706px) {
+    & .introContainer h1 {
+     font-size: 23px;
+    }
+
+    & .introContainer h4 {
+     font-size: 13px;
+    }
+  }
+
+  @media (max-width: 643px) {
+    & .introContainer h1 {
+     font-size: 20px;
+    }
+
+    & .introContainer h4 {
+     font-size: 10px;
+    }
+
+    & .introContainer h2 {
+      font-size: 18px;
+    }
+
+    & .imgContainer img {
+      width: 120px;
+      height: 180px;      
+    }
+  }
+
   @media (max-width: 411px) and (max-height: 731px) {
     margin-top: 20px;
     padding: 0 1rem;
@@ -171,8 +200,7 @@ export const Main = styled.main`
     
     & .imgContainer img {
       width: 100px;
-      height: 160px;
-      border-radius: 5%;
+      height: 160px;     
     }
 
     & .introContainer {
@@ -197,8 +225,7 @@ export const Main = styled.main`
     
     & .imgContainer img {
       width: 100px;
-      height: 160px;
-      border-radius: 5%;
+      height: 160px;      
     }
 
     & .introContainer h1 {
@@ -216,6 +243,42 @@ export const Main = styled.main`
 
   @media (max-width: 360px) and (max-height: 720px) {
     margin-top: 10px;
+  }
+
+  @media (max-width: 351px) {
+    margin-top: 2.5rem;
+    
+    & .introContainer h1 {
+      font-size: 14px;
+    }
+
+    & .introContainer h2, a {
+     font-size: 12px;
+    }
+
+    & .introContainer h4 {
+      font-size: 8.5px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    padding: 0 0.5rem;
+    height: 18rem;
+
+    & .imgContainer img {
+      width: 80px;
+      height: 120px; 
+    }    
+  }
+
+  @media (max-width: 315px) {
+    & .introContainer h1 {
+      font-size: 10px;
+    }
+    
+    & .introContainer h2, a {
+      font-size: 8.5px;
+    }
   }
 `;
 
@@ -312,6 +375,18 @@ export const Aside = styled.aside`
     }
   }
 
+  @media (max-width: 643px) {
+    height: 16rem;
+
+    & .nameContainer h1 {
+        font-size: 22px;
+    }
+
+    & .professionalContainer, .contactContainer {
+        font-size: 12px;   
+    }    
+  }
+
   @media (max-width: 411px) and (max-height: 731px) {
     margin-left: 0;
     min-width: 30%;
@@ -361,6 +436,35 @@ export const Aside = styled.aside`
         width: 80%;   
     }
   }
+
+  @media (max-width: 351px) {
+    & hr {
+      width: 30px;
+    }
+
+    & .nameContainer h1 {
+      font-size: 16px;
+    }
+
+    & .contactContainer a {
+        font-size: 8px;  
+    }
+
+    & .professionalContainer h3 {
+      font-size: 10px;
+    }
+  }
+
+  @media (max-width: 315px) {
+    & .professionalContainer h3 {
+      font-size: 8.5px;
+    }
+
+    & .contactContainer a {
+        font-size: 6px;  
+    }
+  }
+  
 `;
 
 export const H2 = styled.h2`

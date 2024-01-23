@@ -50,6 +50,12 @@ export const Footer = styled.footer`
     }
   }
 
+  @media (max-width: 643px) {
+    & .hardSkillsContainer {
+      flex-wrap: wrap;      
+    }
+  }
+
   @media (max-width: 411px) and (max-height: 731px) {
     width: 100%;
     & .hardSkillsContainer {
