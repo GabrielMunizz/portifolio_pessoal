@@ -280,6 +280,12 @@ export const Main = styled.main`
       font-size: 8.5px;
     }
   }
+
+  @media (max-height: 721px) {
+    & .imgContainer {
+      height: 150px;
+    }
+  }
 `;
 
 

@@ -228,8 +228,7 @@ export const Header = styled.header`
     }
   }
 
-  @media (max-width: 320px) {    
-
+  @media (max-width: 320px) {
     & button {
       font-size: 14px;
     }
@@ -258,4 +257,17 @@ export const Header = styled.header`
       height: 15px;
     }
   }
+
+  @media (max-height: 721px) {
+    & .navbar a {      
+      height: 1.5rem;
+    }
+
+    & .flags {
+      padding-bottom: 1.4rem;
+      margin-left: 3px;
+    }    
+  } 
+
+  
 `;
