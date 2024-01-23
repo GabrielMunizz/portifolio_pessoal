@@ -1,16 +1,16 @@
-import * as S from '../Style/mainStyle';
 import ProjectsCard from '../components/ProjectsCard';
+import { projects } from '../assets/projects';
+import * as S from '../Style/projectsStyle'
 
 const Projects = () => {
+  
   return(
-   <S.Main>
-    <header>
-      <h1>Projects:</h1>
-    </header>
+   <S.Projects>   
     <section>
-      <ProjectsCard />
+      {projects
+        .map((project) => <ProjectsCard key={project.id} project={project}/>)}
     </section>
-   </S.Main>
+   </S.Projects>
   )
 }
 
