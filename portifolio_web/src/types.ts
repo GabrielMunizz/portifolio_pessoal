@@ -14,5 +14,7 @@ export type ProjectsCardType = {
   title: string,
   image: string,
   url: string,
-  description: string,
+  deploy: string,
+  descriptionEng: string,
+  descriptionPT: string,
 }
