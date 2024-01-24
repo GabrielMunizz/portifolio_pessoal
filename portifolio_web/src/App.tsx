@@ -12,6 +12,8 @@ import PortifolioContext from './context/PortifolioContext'
 
 function App() {
   const [isBr, setIsBr] = useState(false);
+  const initialCategory = isBr ? 'Todas' : 'All';
+  const [selected, setSelected] = useState(initialCategory);
   const [isDark, setIsDark] = useState<boolean>(true);
 
   const selectedTheme = isDark ? darkMode : lightMode;
@@ -21,7 +23,7 @@ function App() {
   }
   
   return (
-    <PortifolioContext.Provider value={{isBr, setIsBr}}>
+    <PortifolioContext.Provider value={{isBr, setIsBr, selected, setSelected}}>
       <ThemeProvider theme={selectedTheme}>
         <GlobalStyle />
         <Routes>

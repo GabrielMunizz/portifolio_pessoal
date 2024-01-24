@@ -13,6 +13,7 @@ export type ProjectsCardType = {
   id: number,
   title: string,
   image: string,
+  categories: string[],
   url: string,
   deploy: string,
   descriptionEng: string,

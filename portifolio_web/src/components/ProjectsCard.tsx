@@ -23,7 +23,7 @@ const ProjectsCard = ({ project }: ProjectsCardsProps) => {
           { isBr ? descriptionPT : descriptionEng }
           <span className='styledDot'>.</span>
         </p>
-        <p>
+        <p className='githubLink'>
           GitHub: <a href={ url } target='_blank'>{ url }</a>
         </p>
       </div>

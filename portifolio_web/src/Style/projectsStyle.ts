@@ -37,4 +37,8 @@ export const ProjectCard = styled.section`
   & .styledDot {
     color: ${(props) => props.theme.colors.themeBtn_color}
   }
+
+  & .githubLink {
+    margin-top: 1rem;
+  }
 `
