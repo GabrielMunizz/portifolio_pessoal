@@ -1,8 +1,7 @@
-const categories = [
-  'All',  
+ const categories = [  
   'Front-End',
   'Full-Stack',
   'Freelancer',
 ];
 
-export default categories;
+export default categories

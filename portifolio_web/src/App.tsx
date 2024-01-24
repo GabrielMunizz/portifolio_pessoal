@@ -11,9 +11,8 @@ import Layout from './components/Layout'
 import PortifolioContext from './context/PortifolioContext'
 
 function App() {
-  const [isBr, setIsBr] = useState(false);
-  const initialCategory = isBr ? 'Todas' : 'All';
-  const [selected, setSelected] = useState(initialCategory);
+  const [isBr, setIsBr] = useState(false);  
+  const [selected, setSelected] = useState('All');
   const [isDark, setIsDark] = useState<boolean>(true);
 
   const selectedTheme = isDark ? darkMode : lightMode;
