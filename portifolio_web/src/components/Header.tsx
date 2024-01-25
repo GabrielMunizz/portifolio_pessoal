@@ -1,4 +1,4 @@
-import { HeaderProps } from '../types';
+import { HeaderProps } from '../assets/types';
 import { MdOutlineLightMode, MdDarkMode } from 'react-icons/md';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import { Link } from 'react-router-dom';

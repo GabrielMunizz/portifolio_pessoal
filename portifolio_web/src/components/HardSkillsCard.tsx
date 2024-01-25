@@ -1,4 +1,4 @@
-import { HardSkillsType } from '../types';
+import { HardSkillsType } from '../assets/types';
 import * as S from '../Style/hardSkillsStyles'
 
 type CardProps = {

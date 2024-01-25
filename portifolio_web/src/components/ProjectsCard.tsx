@@ -1,4 +1,4 @@
-import { ProjectsCardType } from '../types';
+import { ProjectsCardType } from '../assets/types';
 import PortifolioContext from '../context/PortifolioContext';
 import { useContext } from 'react';
 import * as S from '../Style/projectsStyle';

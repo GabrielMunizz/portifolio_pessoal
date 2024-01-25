@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import Header from './Header';
-import { HeaderProps } from '../types';
+import { HeaderProps } from '../assets/types';
 
 const Layout = ({ toggleTheme, isDark }: HeaderProps) => {
   return(

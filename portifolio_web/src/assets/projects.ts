@@ -1,4 +1,4 @@
-import { ProjectsCardType } from '../types'
+import { ProjectsCardType } from './types'
 import rickAndMortyImg from '../images/projectsImages/rickAndMorty.png';
 import tunesImg from '../images/projectsImages/trybeTunes.png';
 import IBGEImg from '../images/projectsImages/IBGENews.png';
@@ -44,11 +44,11 @@ export const projects: ProjectsCardType[] = [
     url: 'https://github.com/GabrielMunizz/IBGE_News',
     deploy: 'https://ibge-news-seven.vercel.app/',
     descriptionEng:`This application in React uses IBGE API. The user have access to recent news
-    published in IBGE's web site. Have a "favorites" feature and it's also possible to filter
+    published in IBGE's web site. Have a "dark mode", "favorites" features and it's also possible to filter
     by "release" or "news". Also, the user can access a full version of the news or release
     by clicking in the "Leia a notícia aqui" button`,
     descriptionPT: `A aplicação em React utiliza a API do IBGE. O usuário tem acesso as notícias mais recentes
-    publicadas no site do IBGE. Possui um recurso de "favoritos" e é possível filtrar por "notícias" e 
+    publicadas no site do IBGE. Possui um recurso de "dark mode", "favoritos" e é possível filtrar por "notícias" e 
     "releases". O usuário também pode acessar a versão completa da notícia ou release clicando
     no botão "Leia a notícia aqui"`,
   },
