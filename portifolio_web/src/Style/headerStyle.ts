@@ -257,7 +257,7 @@ export const Header = styled.header`
       height: 15px;
     }
   }
-
+/* 
   @media (max-height: 721px) {
     & .navbar a {      
       height: 1.5rem;
@@ -267,7 +267,7 @@ export const Header = styled.header`
       padding-bottom: 1.4rem;
       margin-left: 3px;
     }    
-  } 
+  }  */
 
   @media (max-width: 285px) {
     padding: 0.5rem;

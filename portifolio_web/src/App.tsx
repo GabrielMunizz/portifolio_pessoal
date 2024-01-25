@@ -11,7 +11,8 @@ import Layout from './components/Layout'
 import PortifolioContext from './context/PortifolioContext'
 
 function App() {
-  const [isBr, setIsBr] = useState(false);  
+  const [isBr, setIsBr] = useState(false);
+  const [orderBy, setOrderBy] = useState('Oldest projects'); 
   const [selected, setSelected] = useState('All');
   const [isDark, setIsDark] = useState<boolean>(true);
 
@@ -22,7 +23,7 @@ function App() {
   }
   
   return (
-    <PortifolioContext.Provider value={{isBr, setIsBr, selected, setSelected}}>
+    <PortifolioContext.Provider value={{ isBr, setIsBr, selected, setSelected, orderBy, setOrderBy }}>
       <ThemeProvider theme={selectedTheme}>
         <GlobalStyle />
         <Routes>

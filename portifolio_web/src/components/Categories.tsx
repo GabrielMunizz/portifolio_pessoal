@@ -4,7 +4,9 @@ import PortifolioContext from '../context/PortifolioContext';
 
 const Categories = () => {
   const { setSelected, isBr } = useContext(PortifolioContext);
+  
   const defaultCategory = isBr ? 'Todas' : 'All';
+
   const handleSelected = ({target}: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedOption = target.value;
     setSelected(selectedOption);

@@ -6,6 +6,12 @@ export const Projects = styled.section`
   justify-content: center;
   align-items: center;
   width: 100%; 
+
+  & .selectContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `
 export const ProjectCard = styled.section`
   display: flex;
@@ -40,5 +46,5 @@ export const ProjectCard = styled.section`
 
   & .githubLink {
     margin-top: 1rem;
-  }
+  }  
 `
