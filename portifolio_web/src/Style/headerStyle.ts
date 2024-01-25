@@ -13,7 +13,7 @@ export const Header = styled.header`
     align-items: center;
     justify-content: center;
     padding-bottom: 0.7rem;
-    margin-left: 1.5rem;
+    margin-left: 1.3rem;
     border: none;
     transition: 0.3s ease;
   }

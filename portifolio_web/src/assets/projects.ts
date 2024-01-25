@@ -1,7 +1,8 @@
 import { ProjectsCardType } from '../types'
 import rickAndMortyImg from '../images/projectsImages/rickAndMorty.png';
 import tunesImg from '../images/projectsImages/trybeTunes.png';
-import IBGEImg from '../images/projectsImages/IBGENews.png'
+import IBGEImg from '../images/projectsImages/IBGENews.png';
+import underConstructionImg from '../images/projectsImages/pngimg.com - under_construction_PNG40.png';
 
 export const projects: ProjectsCardType[] = [
   {
@@ -54,23 +55,23 @@ export const projects: ProjectsCardType[] = [
   {
     id: 3,
     title: 'Front-End Online Store',
-    image: '',
+    image: underConstructionImg,
     categories: ['All', 'Todas', 'Front-End'],
     url: '',
     deploy: '',
     descriptionEng:
-      "My first personal project in React, using Rick and Morty's API. The application consists in a Rick and Morty's 'Wikipedia' and includes a memory game.  React Router Dom, useState, useEffect, Styled-Components are some of the skills used in this project.",
-    descriptionPT: '',
+      `Project under development`,
+    descriptionPT: 'Projeto em desenvolvimento',
   },
   {
     id: 4,
     title: 'Entrée',
-    image: '',
+    image: underConstructionImg,
     categories: ['All', 'Todas', 'Freelancer', 'Full-Stack'],
     url: '',
     deploy: '',
     descriptionEng:
-      "My first personal project in React, using Rick and Morty's API. The application consists in a Rick and Morty's 'Wikipedia' and includes a memory game.  React Router Dom, useState, useEffect, Styled-Components are some of the skills used in this project.",
-    descriptionPT: '',
+      `Project under development`,
+    descriptionPT: 'Projeto em desenvolvimento',
   },
 ];
