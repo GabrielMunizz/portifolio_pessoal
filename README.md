@@ -1,6 +1,8 @@
 # Meu Portfólio
 Bem-vindo ao meu portfólio! Aqui você encontrará informações sobre mim, meus projetos e como entrar em contato. O portfólio possui uma versão em português e outra em inglês, permitindo uma experiência mais acessível.
 
+Link do deploy: [Clique aqui!](https://gabriel-munizz-github-io.vercel.app/)
+
 ## Home
 Na página inicial, apresento uma breve introdução sobre mim, destacando minhas habilidades técnicas. Há também um link para uma apresentação mais detalhada. Você pode ativar o modo escuro clicando no botão correspondente.
 
@@ -40,6 +42,8 @@ Na página de contato, você encontrará informações para se comunicar comigo.
 
 # My Portfolio
 Welcome to my portfolio! Here you will find information about me, my projects, and how to get in touch. The portfolio has versions in both Portuguese and English, ensuring a more accessible experience.
+
+Deploy link: [Click here!](https://gabriel-munizz-github-io.vercel.app/)
 
 ## Home
 On the home page, I provide a brief introduction about myself, showcasing my technical skills. There is also a link to a more detailed introduction. You can switch to dark mode by clicking on the corresponding button.
