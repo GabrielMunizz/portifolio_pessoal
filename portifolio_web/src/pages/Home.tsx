@@ -1,6 +1,13 @@
+import Main from '../components/Main';
+import Footer from '../components/Footer';
+import * as S from '../Style/homeStyle'
+
 const Home = () => {
   return(
-    <h1>Home</h1>
+    <S.Home>      
+      <Main />
+      <Footer />
+    </S.Home>
   )
 }
 
