@@ -57,7 +57,7 @@ For a more detailed introduction, you can visit Full Introduction.
 LinkedIn: [LinkedIn](https://www.linkedin.com/in/gabriel-muniz-dev/)
 GitHub: [GitHub](https://github.com/GabrielMunizz)
 ## Projects
-On the projects page, I showcase my main works. You can filter by categories and sort by "Oldest" or "Newest." Each project has a link to the GitHub repository, and clicking on the image will take you to the project's deployment.
+On the projects page, I showcase my main projects. You can filter by categories and sort by "Oldest" or "Newest." Each project has a link to the GitHub repository, and clicking on the image will take you to the project's deploy.
 
 ### Categories
 Select desired categories to filter the displayed projects.
