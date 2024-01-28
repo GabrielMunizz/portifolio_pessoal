@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Projects from './pages/Projects'
-import FullBio from './pages/FullBio'
+import AboutMe from './pages/AboutMe'
 import { darkMode, lightMode } from './Style/themes'
 import { useState } from 'react'
 import Layout from './components/Layout'
@@ -31,7 +31,7 @@ function App() {
             <Route index element={ <Home />} />
             <Route path='/projects' element={ <Projects /> } />
             <Route path='/contact' element={ <Contact />} />
-            <Route path='/fullbio' element={ <FullBio />} />
+            <Route path='/aboutme' element={ <AboutMe />} />
           </Route>
         </Routes>
       </ThemeProvider>

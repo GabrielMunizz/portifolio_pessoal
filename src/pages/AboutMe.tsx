@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { fullBioTxt } from '../assets/fullBioTxt';
 import PortifolioContext from '../context/PortifolioContext';
 
-const FullBio = () => {
+const AboutMe = () => {
   const { isBr } = useContext(PortifolioContext)
   return(
     <>
@@ -63,4 +63,4 @@ const FullBio = () => {
   )
 }
 
-export default FullBio;
+export default AboutMe;

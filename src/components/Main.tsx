@@ -38,7 +38,7 @@ const Main = () => {
           <h4>
             { isBr ? ptVersion.intro.bioPreview : eVersion.intro.bioPreview }
           </h4>
-          <Link to="/fullbio">{ isBr ? ptVersion.seeFullBio : eVersion.seeFullBio }</Link>
+          <Link to="/aboutme">{ isBr ? ptVersion.seeFullBio : eVersion.seeFullBio }</Link>
         </div>
       </section>
     </S.Main>
