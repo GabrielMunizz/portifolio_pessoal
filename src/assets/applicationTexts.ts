@@ -13,7 +13,7 @@ const eVersion = {
     journey. In 2019, I've made a decision to take a break and reflect
     on my goals and interests...`
   },
-  seeFullBio: '-> ...See full bio.',
+  seeFullBio: '-> ...About me.',
   header: {    
     projects: 'Projects',
     contact: 'Contact',
@@ -34,7 +34,7 @@ const ptVersion = {
     minha paixão por tecnologia e embarcar em uma nova jornada profissional. Em 2019, tomei a decisão 
     de tirar um tempo para refletir sobre as minhas metas e interesses...`
   },
-  seeFullBio: '-> ...Saiba mais.',
+  seeFullBio: '-> ...Sobre mim.',
   header: {    
     projects: 'Projetos',
     contact: 'Contato',
