@@ -17,7 +17,12 @@ const Header = ({ toggleTheme, isDark }: HeaderProps) => {
   const { ptVersion, eVersion } = applicationTexts;
   return(
     <S.Header>
-      <button onClick={toggleTheme}>{ isDark ? <MdOutlineLightMode /> : <MdDarkMode /> }</button>
+      <button 
+        onClick={toggleTheme}
+        className='themeBtn'
+      >
+          { isDark ? <MdOutlineLightMode /> : <MdDarkMode /> }
+      </button>
       <div className='navbar'>        
         <Link to="/">Home</Link>
         <Link to="/projects">{ isBr ? ptVersion.header.projects : eVersion.header.projects }</Link>

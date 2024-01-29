@@ -32,4 +32,21 @@ margin: 8px;
 & div a {
 color: ${(props) => props.theme.colors.text_details};
 };
+
+@media (max-width: 500px) {
+  width: 20rem;
+  height: 10rem;
+
+  & span {
+    font-size: 1rem;
+  }
+
+  & h4 {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 340px) {
+  width: 16rem;
+}
 `

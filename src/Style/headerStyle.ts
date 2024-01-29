@@ -76,7 +76,7 @@ export const Header = styled.header`
     border: none;
   }
 
-  @media (min-width: 4860px) and (min-height: 1495px) {
+  @media (min-width: 4860px) {
     height: 200px;
     padding: 0 40rem;
 
@@ -103,20 +103,24 @@ export const Header = styled.header`
     }
   }
 
-  @media (max-width: 1930px) and (max-height: 1500px) {
+  @media (max-width: 1930px) {
     padding: 0 14rem;
   }
 
-  @media (max-width: 1353px) and (max-height: 850px) {
+  @media (max-width: 1353px) {
     padding: 0 10rem;
   }
 
-  @media (max-width: 1185px) and (max-height: 820px) {
+  @media (max-width: 1185px) {
     height: 70px;
     padding: 0 8.5rem;
 
     & .navbar {
       font-size: 18px;
+    }
+
+    & .navbar a {
+      height: 2rem;
     }
 
     & button {
@@ -128,12 +132,12 @@ export const Header = styled.header`
     }
 
     & .flags img {
-      width: 28px;
-      height: 25px;      
+      width: 25px;
+      height: 23px;      
     }
 
     & .flags {
-      padding-bottom: 1.5rem;
+      padding-bottom: 0.3rem;
       margin-left: 1.2rem;
     }
   }
@@ -142,7 +146,21 @@ export const Header = styled.header`
     padding: 0 4rem 0 2rem;
   }
 
-  @media (max-width: 411px) and (max-height: 731px) {
+  @media (max-width: 500px)  {
+    & .navbar {
+      font-size: 16px;
+    }
+
+    & .navbar a {
+      margin-left: 8px;
+    }
+
+    & .flags {     
+      margin-left: 0.5rem;
+    }
+  }
+
+  @media (max-width: 425px) {
     padding: 0 2rem;
     height: 50px;
 
@@ -150,11 +168,7 @@ export const Header = styled.header`
       margin-top: 22px;
       font-size: 15px;
       min-width: 15%;
-    }
-
-    & .navbar a {
-      margin-left: 8px;
-    }
+    }  
 
     & .socialContainer {
       margin-left: 1rem;
@@ -166,8 +180,7 @@ export const Header = styled.header`
     }
 
     & .flags {
-      padding-bottom: 1.7rem;
-      margin-left: 0.5rem;
+      padding-bottom: 0.7rem;     
     }
 
     & .flags img {
@@ -175,7 +188,8 @@ export const Header = styled.header`
       height: 19px;      
     }
 
-    & button {
+    & .themeBtn {
+      padding-top: 1rem;
       font-size: 22px;
     }
   }
@@ -203,8 +217,7 @@ export const Header = styled.header`
       font-size: 20px;
     }
 
-    & .flags {
-      padding-bottom: 1.7rem;
+    & .flags {      
       margin-left: 0.5rem;
     }
 
@@ -228,7 +241,7 @@ export const Header = styled.header`
     }
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 340px) {
     & button {
       font-size: 14px;
     }
@@ -256,20 +269,19 @@ export const Header = styled.header`
       width: 16px;
       height: 15px;
     }
-  }
-/* 
-  @media (max-height: 721px) {
-    & .navbar a {      
-      height: 1.5rem;
-    }
 
-    & .flags {
-      padding-bottom: 1.4rem;
-      margin-left: 3px;
-    }    
-  }  */
+    & .themeBtn {
+      padding-top: 0;
+    }
+  }
 
   @media (max-width: 285px) {
     padding: 0.5rem;
+  }
+
+  @media (max-width: 245px) {
+    & .themeBtn {
+      font-size: 1rem;
+    }
   }
 `;

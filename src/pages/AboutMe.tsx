@@ -1,10 +1,11 @@
 import { useContext } from 'react';
 import PortifolioContext from '../context/PortifolioContext';
+import * as S from '../Style/aboutMeStyle'
 
 const AboutMe = () => {
   const { isBr } = useContext(PortifolioContext)
   return(
-    <>
+    <S.AboutMe>
       <h1>{ isBr ? 'Sobre mim' : 'About me' }</h1>
       {isBr ? 
       <p>
@@ -96,7 +97,7 @@ const AboutMe = () => {
         Gabriel Muniz
       </p>
       }
-    </>
+    </S.AboutMe>
   )
 }
 
