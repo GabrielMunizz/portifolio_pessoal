@@ -6,6 +6,7 @@ export const Projects = styled.section`
   justify-content: center;
   align-items: center;
   width: 100%; 
+  margin-top: 1rem;
 
   & .selectContainer {
     display: flex;
