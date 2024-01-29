@@ -44,7 +44,9 @@ const AboutMe = () => {
         O que mais aprendi nessa jornada é que não se pode desistir dos sonhos e muito menos achar que é tarde para recomeçar. É melhor começar tarde do que nunca.
         A vida passa rápido, portanto que seja prazerosa em todos os aspectos!
         <br/>
+        <br/>
         Se leu até aqui, muito obrigado pelo seu tempo.
+        <br/>
         <br/>
         Gabriel Muniz
       </p> 
@@ -87,7 +89,9 @@ const AboutMe = () => {
         What I've learned most on this journey is that you can't give up on your dreams and think it's too late to start over.
         It's better to start late than never. Life goes by quickly, so make it enjoyable in every aspect!
         <br/>
+        <br/>
         If you've read this far, thank you very much for your time.
+        <br/>
         <br/>
         Gabriel Muniz
       </p>
