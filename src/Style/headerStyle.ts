@@ -194,7 +194,7 @@ export const Header = styled.header`
     }
   }
 
-  @media (max-width: 375px) and (max-height: 812px) {    
+  @media (max-width: 375px) {    
     padding: 0 2rem;
     height: 50px;
 
@@ -231,13 +231,18 @@ export const Header = styled.header`
     }
   } 
 
-  @media (max-width: 360px) and (max-height: 720px) {
+  @media (max-width: 360px) {
     & button {
       padding-top: 1rem;
     }
 
     & .navbar a {
       height: 2rem;
+    }
+    
+    & .flags {
+      padding-bottom: 1.7rem;
+      margin-left: 0.5rem;
     }
   }
 
@@ -261,7 +266,7 @@ export const Header = styled.header`
     }
 
     & .flags {
-      padding-bottom: 1.6rem;
+      padding-bottom: 2.6rem;
       margin-left: 2px;
     }
 
