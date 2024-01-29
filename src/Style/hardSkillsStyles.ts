@@ -24,7 +24,7 @@ export const HardSkillsCard = styled.div`
     height: 150px;
   }
 
-  @media (min-width: 4860px) and (min-height: 1495px) {
+  @media (min-width: 4860px) {
     width: 300px;
     height: 330px;
     font-size: 1.2rem;
@@ -35,7 +35,7 @@ export const HardSkillsCard = styled.div`
   }
   }
 
-  @media (max-width: 1723px) and (max-height: 1050px) {
+  @media (max-width: 1723px) {
     width: 150px;
     height: 180px;
     font-size: 0.8rem;
@@ -46,7 +46,7 @@ export const HardSkillsCard = styled.div`
     }
   }
 
-  @media (max-width: 1185px) and (max-height: 820px) {
+  @media (max-width: 1185px) {
     width: 100px;
     height: 130px;
     font-size: 0.6rem;
@@ -57,7 +57,7 @@ export const HardSkillsCard = styled.div`
     }
   }
 
-  @media (max-width: 768px) and (max-height: 1024px) {
+  @media (max-width: 768px) {
     width: 100px;
     height: 130px;
     font-size: 0.6rem;
@@ -68,7 +68,7 @@ export const HardSkillsCard = styled.div`
     }
   }
 
-  @media (max-width: 411px) and (max-height: 731px) {
+  @media (max-width: 411px) {
     width: 90px;
     height: 95px;
     font-size: 0.5rem;
@@ -80,7 +80,7 @@ export const HardSkillsCard = styled.div`
     }
   }
 
-  @media (max-width: 375px) and (max-height: 812px) {
+  @media (max-width: 375px) {
     width: 90px;
     height: 95px;
     font-size: 0.5rem;

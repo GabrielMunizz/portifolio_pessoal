@@ -7,7 +7,7 @@ export const Main = styled.main`
   align-items: flex-start;
   width: 100%;
   height: 100%;
-  padding: 0 35px;  
+  padding: 0 35px;
 
   & .mainContent {
     display: flex;
@@ -48,11 +48,11 @@ export const Main = styled.main`
     color: ${(props) => props.theme.colors.text_details};
   }
 
-  @media (min-width: 4860px) and (min-height: 1495px) {
+  @media (min-width: 4860px) {
     margin-bottom: 18.2rem;
     padding: 0 75px;
 
-    & .introContainer  {
+    & .introContainer {
       height: 600px;
     }
 
@@ -64,19 +64,20 @@ export const Main = styled.main`
       font-size: 50px;
     }
 
-    & .introContainer h4, a {
+    & .introContainer h4,
+    a {
       font-size: 25px;
-    }   
+    }
   }
 
-  @media (max-width: 1723px) and (max-height: 1050px) {
+  @media (max-width: 1723px) {
     & .imgContainer {
       min-width: 55%;
     }
 
     & .imgContainer img {
       width: 300px;
-      height: 400px
+      height: 400px;
     }
 
     & .introContainer {
@@ -84,15 +85,14 @@ export const Main = styled.main`
     }
   }
 
-  @media (max-width: 1353px) and (max-height: 850px) {
-
+  @media (max-width: 1353px) {
     & .imgContainer {
       min-width: 50%;
     }
 
     & .imgContainer img {
       width: 250px;
-      height: 350px
+      height: 350px;
     }
 
     & .introContainer {
@@ -100,17 +100,17 @@ export const Main = styled.main`
     }
 
     & .introContainer h1 {
-     font-size: 35px;
+      font-size: 35px;
     }
   }
 
-  @media (max-width: 1185px) and (max-height: 820px) {
+  @media (max-width: 1185px) {
     & .introContainer h1 {
-     font-size: 28px;
+      font-size: 28px;
     }
 
     & .introContainer h4 {
-     font-size: 14px;
+      font-size: 14px;
     }
 
     & .mainContent {
@@ -123,35 +123,35 @@ export const Main = styled.main`
 
     & .imgContainer img {
       width: 210px;
-      height: 300px
+      height: 300px;
     }
   }
 
-  @media (max-width: 1024px) and (max-height: 720px) {
+  @media (max-width: 1024px) {
     & .introContainer {
-        max-width: 35%
+      max-width: 35%;
     }
   }
 
-  @media (max-width: 768px) and (max-height: 1024px) {
-    margin-top: 5rem;
+  @media (max-width: 768px) {
+    margin-top: 1rem;
 
     & .mainContent {
-      height: 24rem;      
+      height: 24rem;
       transform: translateX(0);
     }
-    
+
     & .introContainer {
-        max-width: 42%;
-        margin-left: 10%;
+      max-width: 42%;
+      margin-left: 10%;
     }
 
     & .introContainer h1 {
-     font-size: 28px;
+      font-size: 28px;
     }
 
     & .introContainer h4 {
-     font-size: 14px;
+      font-size: 14px;
     }
 
     & .imgContainer {
@@ -160,27 +160,27 @@ export const Main = styled.main`
 
     & .imgContainer img {
       width: 180px;
-      height: 270px
-    }    
+      height: 270px;
+    }
   }
 
   @media (max-width: 706px) {
     & .introContainer h1 {
-     font-size: 23px;
+      font-size: 23px;
     }
 
     & .introContainer h4 {
-     font-size: 13px;
+      font-size: 13px;
     }
   }
 
   @media (max-width: 643px) {
     & .introContainer h1 {
-     font-size: 20px;
+      font-size: 20px;
     }
 
     & .introContainer h4 {
-     font-size: 10px;
+      font-size: 10px;
     }
 
     & .introContainer h2 {
@@ -189,31 +189,31 @@ export const Main = styled.main`
 
     & .imgContainer img {
       width: 120px;
-      height: 180px;      
+      height: 180px;
     }
   }
 
-  @media (max-width: 411px) and (max-height: 731px) {
+  @media (max-width: 465px) {
     margin-top: 20px;
     padding: 0 1rem;
-       
-    
+
     & .imgContainer img {
       width: 100px;
-      height: 160px;     
+      height: 160px;
     }
 
     & .introContainer {
-        max-width: 42%;
-        margin-left: 8%;
+      max-width: 42%;
+      margin-left: 8%;
     }
 
     & .introContainer h1 {
-     font-size: 18px;
+      font-size: 0.8rem;
     }
 
-    & .introContainer h2, a {
-     font-size: 12px;
+    & .introContainer h2,
+    a {
+      font-size: 12px;
     }
 
     & .introContainer h4 {
@@ -221,19 +221,15 @@ export const Main = styled.main`
     }
   }
 
-  @media (max-width: 375px) and (max-height: 812px) {
-    
+  @media (max-width: 375px) {
     & .imgContainer img {
       width: 100px;
-      height: 160px;      
+      height: 160px;
     }
 
-    & .introContainer h1 {
-     font-size: 18px;
-    }
-
-    & .introContainer h2, a {
-     font-size: 14px;
+    & .introContainer h2,
+    a {
+      font-size: 14px;
     }
 
     & .introContainer h4 {
@@ -241,19 +237,18 @@ export const Main = styled.main`
     }
   }
 
-  @media (max-width: 360px) and (max-height: 720px) {
+  @media (max-width: 360px) {
     margin-top: 10px;
   }
 
   @media (max-width: 351px) {
-    margin-top: 2.5rem;
-    
     & .introContainer h1 {
       font-size: 14px;
     }
 
-    & .introContainer h2, a {
-     font-size: 12px;
+    & .introContainer h2,
+    a {
+      font-size: 12px;
     }
 
     & .introContainer h4 {
@@ -267,16 +262,17 @@ export const Main = styled.main`
 
     & .imgContainer img {
       width: 80px;
-      height: 120px; 
-    }    
+      height: 120px;
+    }
   }
 
   @media (max-width: 315px) {
     & .introContainer h1 {
       font-size: 10px;
     }
-    
-    & .introContainer h2, a {
+
+    & .introContainer h2,
+    a {
       font-size: 8.5px;
     }
   }
@@ -354,17 +350,17 @@ export const Aside = styled.aside`
     }
   }
 
-  @media (max-width: 1185px) and (max-height: 820px) {
+  @media (max-width: 1185px) {
     height: 23rem;    
   }
 
-  @media (max-width: 1024px) and (max-height: 720px) {
+  @media (max-width: 1024px) {
     & .nameContainer h1 {
         font-size: 30px;
     }
   }
 
-  @media (max-width: 768px) and (max-height: 1024px) {
+  @media (max-width: 768px) {
     height: 22rem;
     margin-left: 5%;
 
@@ -393,7 +389,7 @@ export const Aside = styled.aside`
     }    
   }
 
-  @media (max-width: 411px) and (max-height: 731px) {
+  @media (max-width: 465px) {
     margin-left: 0;
     min-width: 30%;
 
@@ -410,7 +406,7 @@ export const Aside = styled.aside`
     }
   }
 
-  @media (max-width: 375px) and (max-height: 812px) {
+  @media (max-width: 375px) {
     margin-left: 0;
     min-width: 30%;
 
@@ -427,7 +423,7 @@ export const Aside = styled.aside`
     }
   }
 
-  @media (max-width: 360px) and (max-height: 720px) {
+  @media (max-width: 360px) {
     width: 10%;  
 
     & hr {
