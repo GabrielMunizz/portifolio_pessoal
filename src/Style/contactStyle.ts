@@ -7,6 +7,10 @@ justify-content: center;
 align-items: flex-start;
 width: 100%;
 height: calc(100vh - 100px);
+
+@media (max-width: 350px) {
+  align-items: center;
+}
 `
 
 export const ContactSection = styled.section`
@@ -36,6 +40,7 @@ color: ${(props) => props.theme.colors.text_details};
 @media (max-width: 500px) {
   width: 20rem;
   height: 10rem;
+  margin-top: 1rem;
 
   & span {
     font-size: 1rem;
@@ -46,7 +51,7 @@ color: ${(props) => props.theme.colors.text_details};
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 340px) {  
   width: 16rem;
 }
 `
