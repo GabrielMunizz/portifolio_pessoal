@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import PortifolioContext from '../context/PortifolioContext';
-
+import * as S from '../Style/projectsStyle';
 
 const OrderBy = () => {
   const { isBr, setOrderBy } = useContext(PortifolioContext);
@@ -12,12 +12,12 @@ const OrderBy = () => {
     setOrderBy(selectedOrder);
   }
   return(
-    <div>
+    <S.OrderBy>
       <select name="order" onChange={ handleOrder }>
         <option value={ oldest }>{ oldest }</option>
         <option value={ newest }>{ newest }</option>
       </select>
-    </div>
+    </S.OrderBy>
   )
 };
 

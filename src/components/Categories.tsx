@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import categories from '../assets/categories';
 import PortifolioContext from '../context/PortifolioContext';
+import * as S from '../Style/projectsStyle';
 
 const Categories = () => {
   const { setSelected, isBr } = useContext(PortifolioContext);
@@ -12,7 +13,7 @@ const Categories = () => {
     setSelected(selectedOption);
   }
   return(
-    <div>
+    <S.Categories>
       <select 
         name="categories" 
         onChange={ handleSelected }        
@@ -24,7 +25,7 @@ const Categories = () => {
         </option>
         )) }
       </select>
-    </div>
+    </S.Categories>
   )
 };
 
