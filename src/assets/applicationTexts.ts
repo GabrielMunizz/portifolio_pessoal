@@ -1,4 +1,6 @@
-const eVersion = {
+import { ApplicationTxtType } from './types'
+
+const eVersion: ApplicationTxtType = {
   professional: [
     '- Front-End Web Developer',
     '- Guitar Enthusiast',
@@ -19,7 +21,7 @@ const eVersion = {
   }
 }
 
-const ptVersion = {
+const ptVersion: ApplicationTxtType = {
   professional: [
     '- Desenvolvedor Web Front-End',
     '- Entusiasta na Guitarra',
