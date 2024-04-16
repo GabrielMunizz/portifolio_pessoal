@@ -26,6 +26,9 @@ const ProjectsCard = ({ project }: ProjectsCardsProps) => {
         <p className='githubLink'>
           GitHub: <a href={ url } target='_blank'>{ url }</a>
         </p>
+        <p>
+          Deploy: <a href={ deploy } target='_blank'>{ deploy }</a>
+        </p>
       </div>
     </S.ProjectCard>
   ) 
