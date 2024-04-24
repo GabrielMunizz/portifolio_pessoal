@@ -29,9 +29,7 @@ export const Main = styled.main`
 
   .imgContainer img {
     width: 380px;
-    height: 480px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px 0px #000;
+    height: 380px;  
   }
 
   & .introContainer {
@@ -77,7 +75,7 @@ export const Main = styled.main`
 
     & .imgContainer img {
       width: 300px;
-      height: 400px;
+      height: 300px;
     }
 
     & .introContainer {
@@ -92,7 +90,7 @@ export const Main = styled.main`
 
     & .imgContainer img {
       width: 250px;
-      height: 350px;
+      height: 250px;
     }
 
     & .introContainer {
@@ -123,7 +121,7 @@ export const Main = styled.main`
 
     & .imgContainer img {
       width: 210px;
-      height: 300px;
+      height: 210px;
     }
   }
 
@@ -160,7 +158,7 @@ export const Main = styled.main`
 
     & .imgContainer img {
       width: 180px;
-      height: 270px;
+      height: 180px;
     }
   }
 
@@ -189,7 +187,7 @@ export const Main = styled.main`
 
     & .imgContainer img {
       width: 120px;
-      height: 180px;
+      height: 120px;
     }
   }
 
@@ -199,7 +197,7 @@ export const Main = styled.main`
 
     & .imgContainer img {
       width: 100px;
-      height: 160px;
+      height: 100px;
     }
 
     & .introContainer {
@@ -221,11 +219,7 @@ export const Main = styled.main`
     }
   }
 
-  @media (max-width: 375px) {
-    & .imgContainer img {
-      width: 100px;
-      height: 160px;
-    }
+  @media (max-width: 375px) {    
 
     & .introContainer h2,
     a {
@@ -262,7 +256,7 @@ export const Main = styled.main`
 
     & .imgContainer img {
       width: 80px;
-      height: 120px;
+      height: 80px;
     }
   }
 
