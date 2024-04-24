@@ -10,7 +10,7 @@ import PortifolioContext from '../context/PortifolioContext';
 import applicationTexts from '../assets/applicationTexts';
 
 const Header = ({ toggleTheme, isDark }: HeaderProps) => {
-  const { setIsBr, isBr } = useContext(PortifolioContext);
+  const { setIsBr, isBr, handleClick } = useContext(PortifolioContext);
   const versionHandler = () => {
     setIsBr((prev) => !prev);
   }
@@ -24,9 +24,24 @@ const Header = ({ toggleTheme, isDark }: HeaderProps) => {
           { isDark ? <MdOutlineLightMode /> : <MdDarkMode /> }
       </button>
       <div className='navbar'>        
-        <Link to="/">Home</Link>
-        <Link to="/projects">{ isBr ? ptVersion.header.projects : eVersion.header.projects }</Link>
-        <Link to='/contact'>{ isBr ? ptVersion.header.contact : eVersion.header.contact }</Link>
+        <Link 
+          to="/"
+          onClick={ () => handleClick('/') }
+        >
+          Home
+        </Link>
+        <Link 
+          to="/projects"
+          onClick={ () => handleClick("/projects") }
+        >
+          { isBr ? ptVersion.header.projects : eVersion.header.projects }
+        </Link>
+        <Link 
+          to="/contact"
+          onClick={ () => handleClick("/contact") }
+        >
+            { isBr ? ptVersion.header.contact : eVersion.header.contact }
+        </Link>
         <div className='socialContainer'>
           <a href="https://www.linkedin.com/in/gabriel-muniz-dev/" target='_blank'>{ <AiFillLinkedin /> }</a>
           <a href="https://github.com/GabrielMunizz" target='_blank'>{ <AiFillGithub /> }</a>

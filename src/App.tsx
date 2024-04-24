@@ -15,6 +15,18 @@ function App() {
   const [orderBy, setOrderBy] = useState('Newest'); 
   const [selected, setSelected] = useState('All');
   const [isDark, setIsDark] = useState<boolean>(false);
+  const [isChanging, setIsChanging] = useState(false);
+
+  const handleClick = (route: string) => {
+    const thisRoute = window.location.pathname;
+    if (route === thisRoute) {
+      return;
+    }
+    setIsChanging(true);
+    setTimeout(() => {
+      setIsChanging(false);
+    }, 800)
+  }
 
   const selectedTheme = isDark ? darkMode : lightMode;
 
@@ -23,20 +35,34 @@ function App() {
   }
   
   return (
-    <PortifolioContext.Provider value={{ isBr, setIsBr, selected, setSelected, orderBy, setOrderBy }}>
+    <PortifolioContext.Provider
+      value={{
+        isBr,
+        setIsBr,
+        selected,
+        setSelected,
+        orderBy,
+        setOrderBy,
+        isChanging,
+        handleClick,
+      }}
+    >
       <ThemeProvider theme={selectedTheme}>
         <GlobalStyle />
         <Routes>
-          <Route path='/' element={<Layout toggleTheme={ toggleTheme } isDark={ isDark }/>}>
-            <Route index element={ <Home />} />
-            <Route path='/projects' element={ <Projects /> } />
-            <Route path='/contact' element={ <Contact />} />
-            <Route path='/aboutme' element={ <AboutMe />} />
+          <Route
+            path="/"
+            element={<Layout toggleTheme={toggleTheme} isDark={isDark} />}
+          >
+            <Route index element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/aboutme" element={<AboutMe />} />
           </Route>
         </Routes>
       </ThemeProvider>
     </PortifolioContext.Provider>
-  )
+  );
 }
 
 export default App
