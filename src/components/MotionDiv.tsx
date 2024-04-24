@@ -21,7 +21,7 @@ const MotionDiv = () => {
             style={{
               backgroundColor: '#000',
               width: '100%',
-              height: 'calc(100vh - 100px)',
+              height: '100vh',
               zIndex: '100',
             }}
           />      
