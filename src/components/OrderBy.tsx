@@ -14,8 +14,8 @@ const OrderBy = () => {
   return(
     <S.OrderBy>
       <select name="order" onChange={ handleOrder }>
-        <option value={ oldest }>{ oldest }</option>
         <option value={ newest }>{ newest }</option>
+        <option value={ oldest }>{ oldest }</option>
       </select>
     </S.OrderBy>
   )

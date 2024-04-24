@@ -12,9 +12,9 @@ import PortifolioContext from './context/PortifolioContext'
 
 function App() {
   const [isBr, setIsBr] = useState(false);
-  const [orderBy, setOrderBy] = useState('Oldest projects'); 
+  const [orderBy, setOrderBy] = useState('Newest'); 
   const [selected, setSelected] = useState('All');
-  const [isDark, setIsDark] = useState<boolean>(true);
+  const [isDark, setIsDark] = useState<boolean>(false);
 
   const selectedTheme = isDark ? darkMode : lightMode;
 
