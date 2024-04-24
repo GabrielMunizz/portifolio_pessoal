@@ -2,7 +2,7 @@ import { ProjectsCardType } from './types'
 import rickAndMortyImg from '../images/projectsImages/rickAndMorty.png';
 import tunesImg from '../images/projectsImages/trybeTunes.png';
 import IBGEImg from '../images/projectsImages/IBGENews.png';
-import underConstructionImg from '../images/projectsImages/pngimg.com - under_construction_PNG40.png';
+import onlineStoreimg from '../images/projectsImages/OnlineStore.png';
 import byteForBite from '../images/projectsImages/byte-for-bite.jpeg'
 
 export const projects: ProjectsCardType[] = [
@@ -70,13 +70,17 @@ export const projects: ProjectsCardType[] = [
   },
   {
     id: 4,
-    title: 'Entrée',
-    image: underConstructionImg,
-    categories: ['All', 'Todas', 'Freelancer', 'Full-Stack'],
-    url: '',
-    deploy: '',
+    title: 'Online Store',
+    image: onlineStoreimg,
+    categories: ['All', 'Todas', 'Front-End'],
+    url: 'https://github.com/GabrielMunizz/OnlineStore',
+    deploy: 'https://online-store-nine-omega.vercel.app/',
     descriptionEng:
-      `Project under development`,
-    descriptionPT: 'Projeto em desenvolvimento',
+      `Online Store is a Front-End web application that uses Mercado Livre API products catalog.
+      The objective is to simulate an e-commerce web site with shop cart, card validation and product review features.
+      The application is responsive and have 90% test coverage`,
+    descriptionPT: `Online Store é uma aplicação Web Front-End que consome a API de produtos do Mercado Livre.
+    O objetivo da aplicação foi simular um site de e-commerce com utilização de carrinho de compras, validação de cartão e review de produtos.    
+    A aplicação é responsiva e possui uma cobertura acima de 90% nos testes.`,
   },
 ];
