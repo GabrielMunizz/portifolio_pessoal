@@ -6,7 +6,7 @@ import PortifolioContext from '../context/PortifolioContext';
 import MotionDiv from './MotionDiv';
 
 const Layout = ({ toggleTheme, isDark }: HeaderProps) => {
-  const {isChanging} = useContext(PortifolioContext)
+  const {isChanging} = useContext(PortifolioContext); 
   return(
     <>
       <MotionDiv />

@@ -8,8 +8,7 @@ export const Footer = styled.footer`
   background-color: ${(props) => props.theme.colors.footer_background};
   width: 100%;
   min-height: 20.6rem;
-  margin-top: auto;
-  
+  margin-top: auto;  
 
   & .hardSkillsContainer {
     display: flex;

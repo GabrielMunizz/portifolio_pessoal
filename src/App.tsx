@@ -22,9 +22,11 @@ function App() {
     if (route === thisRoute) {
       return;
     }
+    document.body.style.overflow = 'hidden';
     setIsChanging(true);
     setTimeout(() => {
-      setIsChanging(false);
+      setIsChanging(false);      
+      document.body.style.overflow = '';
     }, 800)
   }
 

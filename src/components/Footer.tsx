@@ -11,7 +11,7 @@ const Footer = () => {
         <H2>Hard Skills</H2>
       </div>
       <motion.div
-        animate={{ y: [100, 0] }}
+        animate={{ y: [50, 0] }}
         transition={{ type: 'spring' }}        
         className="hardSkillsContainer"
       >

@@ -5,8 +5,9 @@ export const Home = styled.section`
   flex-direction: column;
   min-height: calc(100vh - 100px);
   
+  
   @media (min-width: 4860px) and (min-height: 1495px) {
-    min-height: calc(100vh - 200px);
+    min-height: calc(100vh - 200px);    
   }
 
   @media (max-width: 1178px) {
