@@ -5,7 +5,7 @@ import PortifolioContext from '../context/PortifolioContext';
 const MotionDiv = () => {
   const { isChanging } = useContext(PortifolioContext);
   return (
-    <AnimatePresence>
+    <AnimatePresence mode='popLayout'>
       {
         isChanging && (
           <motion.div
