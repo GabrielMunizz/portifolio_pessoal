@@ -12,17 +12,18 @@ export const Projects = styled.section`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;      
   }
 
   @media (max-width: 500px) {
-    & .selectContainer {      
+    & .selectContainer {       
+      padding: 0 1rem;    
       font-size: 0.8rem;
     }
   }
 
   @media (max-width: 350px) {    
-    & .selectContainer {      
+    & .selectContainer {            
       font-size: 0.7rem;
     }
   }
@@ -32,7 +33,8 @@ export const ProjectCard = styled.section`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem 0;
+  width: 100%;
+  margin: 2rem 0;  
 
   & .projectTitleContainer h1,
   .projectDataContainer a {
@@ -117,9 +119,30 @@ export const ProjectCard = styled.section`
   }
 
   @media (max-width: 425px) {
+
+    & .projectDataContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 30rem;      
+    }
     
     & .projectDataContainer img {
       width: 20rem;
+      margin-bottom: 0.5rem;
+    }
+
+    & .linksContainer {
+      text-align: left;
+      width: 100%;      
+      padding: 0 1rem;
+    }
+
+    & .linksContainer p {
+      font-size: 0.7rem;
+      margin-bottom: 0.5rem;     
     }
 
     & .description {      
@@ -136,22 +159,14 @@ export const ProjectCard = styled.section`
     & .description {      
       max-width: 15rem;
     }
-
-    & .githubLink {
-      margin-top: 3rem;
-      font-size: 0.7rem;
-    }
+   
   }
 
   @media (max-width: 300px) {
 
     & .description {      
       font-size: 0.6rem;
-    }
-    & .githubLink {  
-      margin-top: 0;   
-      font-size: 0.6rem;
-    }
+    }   
   }
 `;
 

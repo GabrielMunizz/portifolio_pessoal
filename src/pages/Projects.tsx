@@ -14,30 +14,29 @@ const Projects = () => {
   const newestProjects = selectedProjects
   .slice()
     .sort((a, b) => b.id - a.id);
-  return(
-   <S.Projects>   
-    <section>
-      <div className='selectContainer'>
-        <span>
-          {isBr ? 'Selecione a categoria: ' : 'Select category: '}
-          <Categories />
-        </span>
-        <span>
-          {isBr ? 'Ordenado por: ' : 'Order by: '}
-          <OrderBy />
-        </span>
-      </div>
-      {
-        orderBy === 'Oldest projects' || orderBy === 'Mais antigos' ? 
-        selectedProjects
-          .map((project) => <ProjectsCard key={ project.id } project={ project }/>) 
-        :
-        newestProjects
-          .map((project) => <ProjectsCard key={ project.id } project={ project }/>)
-      }
-    </section>
-   </S.Projects>
-  )
+  return (
+    <S.Projects>
+      <section>
+        <div className="selectContainer">
+          <span>
+            {isBr ? 'Selecione a categoria: ' : 'Select category: '}
+            <Categories />
+          </span>
+          <span>
+            {isBr ? 'Ordenado por: ' : 'Order by: '}
+            <OrderBy />
+          </span>
+        </div>
+        {orderBy === 'Oldest projects' || orderBy === 'Mais antigos'
+          ? selectedProjects.map((project) => (
+              <ProjectsCard key={project.id} project={project} />
+            ))
+          : newestProjects.map((project) => (
+              <ProjectsCard key={project.id} project={project} />
+            ))}
+      </section>
+    </S.Projects>
+  );
 }
 
 export default Projects;

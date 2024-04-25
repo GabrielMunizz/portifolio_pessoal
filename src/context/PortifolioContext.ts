@@ -7,6 +7,8 @@ export type PortifolioContextType = {
   setSelected: React.Dispatch<React.SetStateAction<string>>,
   orderBy: string,
   setOrderBy: React.Dispatch<React.SetStateAction<string>>,
+  isChanging: boolean,
+  handleClick: (route: string) => void,
 };
 
 const PortifolioContext = createContext({} as PortifolioContextType);
