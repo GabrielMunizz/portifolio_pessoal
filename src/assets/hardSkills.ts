@@ -4,6 +4,10 @@ import CSSLogo from '../images/cssLogo.png';
 import ReactLogo from '../images/reactLogo.png';
 import ReduxLogo from '../images/reduxLogo.png';
 import TSLogo from '../images/typescript-1024.png';
+import DockerLogo from '../images/dockerLogo.png';
+import NodeLogo from '../images/nodeLogo.png';
+import MySQLLogo from '../images/mySQLLogo.png';
+import JavaLogo from '../images/javaLogo.png';
 
 export const hardSkills = [
    {
@@ -35,5 +39,25 @@ export const hardSkills = [
     id: 6,
     title: 'TypeScript',
     image: TSLogo,
+  },  
+  {
+    id: 7,
+    title: 'Docker',
+    image: DockerLogo,
   },
+  {
+    id: 8,
+    title: 'MySQL',
+    image: MySQLLogo,
+  },
+  {
+    id: 9,
+    title: 'Node.JS',
+    image: NodeLogo,
+  },
+  {
+    id: 10,
+    title: 'Java',
+    image: JavaLogo,
+  }
 ]

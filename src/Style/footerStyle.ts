@@ -18,6 +18,13 @@ export const Footer = styled.footer`
     margin-top: 20px;
   }
 
+  & .hardSkillsContainer button {
+    background-color: transparent;
+    border: none; 
+    font-size: 2rem;
+    cursor: pointer;    
+  }  
+
   & h2 {
     margin-top: 20px;
   }
