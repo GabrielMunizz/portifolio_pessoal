@@ -1,10 +1,8 @@
-import * as S from '../Style/contactStyle';
-import { H2 } from '../Style/mainStyle';
-import { AiFillContacts } from 'react-icons/ai';
-
+import * as S from "../Style/Contact.style";
+import { H2 } from "../Style/Main.style";
+import { AiFillContacts } from "react-icons/ai";
 
 const Contact = () => {
-
   return (
     <S.Contact>
       <S.ContactSection>
@@ -17,7 +15,7 @@ const Contact = () => {
         <div>
           <h4>E-mail: gabrielmfd@gmail.com</h4>
           <h4>
-            LinkedIn:{' '}
+            LinkedIn:{" "}
             <a
               href="https://www.linkedin.com/in/gabriel-muniz-dev/"
               target="_blank"
@@ -30,6 +28,6 @@ const Contact = () => {
       </S.ContactSection>
     </S.Contact>
   );
-}
+};
 
 export default Contact;

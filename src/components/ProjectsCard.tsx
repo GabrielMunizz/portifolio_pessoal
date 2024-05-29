@@ -1,39 +1,45 @@
-import { ProjectsCardType } from '../assets/types';
-import PortifolioContext from '../context/PortifolioContext';
-import { useContext } from 'react';
-import * as S from '../Style/projectsStyle';
+import { ProjectsCardType } from "../assets/types";
+import PortifolioContext from "../context/PortifolioContext";
+import { useContext } from "react";
+import * as S from "../Style/Projects.style";
 
 type ProjectsCardsProps = {
-  project: ProjectsCardType
-}
+  project: ProjectsCardType;
+};
 
 const ProjectsCard = ({ project }: ProjectsCardsProps) => {
-  const { isBr } = useContext(PortifolioContext)
+  const { isBr } = useContext(PortifolioContext);
   const { title, image, url, deploy, descriptionEng, descriptionPT } = project;
-  return(
+  return (
     <S.ProjectCard>
-      <div className='projectTitleContainer'>
-        <h1>{ title }:</h1>
+      <div className="projectTitleContainer">
+        <h1>{title}:</h1>
       </div>
-      <div className='projectDataContainer'>
-        <a href={ deploy } target='_blank'>
-          <img src={ image } alt={ title } />
-        </a>        
-        <p className='description'>
-          { isBr ? descriptionPT : descriptionEng }
-          <span className='styledDot'>.</span>
+      <div className="projectDataContainer">
+        <a href={deploy} target="_blank">
+          <img src={image} alt={title} />
+        </a>
+        <p className="description">
+          {isBr ? descriptionPT : descriptionEng}
+          <span className="styledDot">.</span>
         </p>
-        <div className='linksContainer'>
-          <p className='githubLink'>
-            GitHub: <a href={ url } target='_blank'>{ url }</a>
+        <div className="linksContainer">
+          <p className="githubLink">
+            GitHub:{" "}
+            <a href={url} target="_blank">
+              {url}
+            </a>
           </p>
           <p>
-            Deploy: <a href={ deploy } target='_blank'>{ deploy }</a>
+            Deploy:{" "}
+            <a href={deploy} target="_blank">
+              {deploy}
+            </a>
           </p>
         </div>
       </div>
     </S.ProjectCard>
-  ) 
-}
+  );
+};
 
 export default ProjectsCard;

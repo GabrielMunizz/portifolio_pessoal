@@ -1,12 +1,12 @@
-import { useContext } from 'react';
-import PortifolioContext from '../context/PortifolioContext';
-import * as S from '../Style/aboutMeStyle'
+import { useContext } from "react";
+import PortifolioContext from "../context/PortifolioContext";
+import * as S from "../Style/AboutMe.style";
 
 const AboutMe = () => {
-  const { isBr } = useContext(PortifolioContext)
+  const { isBr } = useContext(PortifolioContext);
   return (
     <S.AboutMe>
-      <h1>{isBr ? 'Sobre mim' : 'About me'}</h1>
+      <h1>{isBr ? "Sobre mim" : "About me"}</h1>
       {isBr ? (
         <p>
           Mesmo antes de me formar em Administração de Empresas, lá em 2013, já
@@ -132,6 +132,6 @@ const AboutMe = () => {
       )}
     </S.AboutMe>
   );
-}
+};
 
 export default AboutMe;

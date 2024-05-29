@@ -1,15 +1,14 @@
-import { Link } from 'react-router-dom';
-import applicationTexts from '../assets/applicationTexts';
-import photo from '../images/fotoPerfilRedonda.png';
-import * as S from '../Style/mainStyle';
-import { useContext } from 'react';
-import PortifolioContext from '../context/PortifolioContext';
-
+import { Link } from "react-router-dom";
+import applicationTexts from "../assets/applicationTexts";
+import photo from "../images/fotoPerfilRedonda.png";
+import * as S from "../Style/Main.style";
+import { useContext } from "react";
+import PortifolioContext from "../context/PortifolioContext";
 
 const Main = () => {
   const { isBr, handleClick } = useContext(PortifolioContext);
   const { eVersion, ptVersion } = applicationTexts;
-  
+
   return (
     <S.Main>
       <S.Aside>
@@ -40,10 +39,7 @@ const Main = () => {
           <h4>
             {isBr ? ptVersion.intro.bioPreview : eVersion.intro.bioPreview}
           </h4>
-          <Link 
-            to="/aboutme"
-            onClick={() => handleClick("/aboutme")}
-          >
+          <Link to="/aboutme" onClick={() => handleClick("/aboutme")}>
             {isBr ? ptVersion.seeFullBio : eVersion.seeFullBio}
           </Link>
         </div>

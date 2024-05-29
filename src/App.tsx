@@ -9,7 +9,6 @@ import { darkMode, lightMode } from "./Style/themes";
 import { useState } from "react";
 import Layout from "./components/Layout";
 import PortifolioContext from "./context/PortifolioContext";
-import NavBar from "./components/NavBar";
 
 function App() {
   const [isBr, setIsBr] = useState(false);
@@ -55,11 +54,10 @@ function App() {
             path="/"
             element={<Layout toggleTheme={toggleTheme} isDark={isDark} />}
           >
-            <Route index element={<Home />} />
+            <Route index path="/home" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/aboutme" element={<AboutMe />} />
-            <Route path="/refactor" element={<NavBar />} />
           </Route>
         </Routes>
       </ThemeProvider>

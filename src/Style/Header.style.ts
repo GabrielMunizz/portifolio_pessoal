@@ -1,4 +1,4 @@
-import { styled } from 'styled-components';
+import { styled } from "styled-components";
 
 export const Header = styled.header`
   display: flex;
@@ -46,20 +46,14 @@ export const Header = styled.header`
     justify-content: space-between;
     align-items: center;
     min-width: 30%;
-    font-size: 25px;
   }
 
   & .navbar a {
-    text-decoration: none;
     color: ${(props) => props.theme.colors.main_text_color};
     transition: 0.3s ease;
     padding-bottom: 10px;
-    margin-left: 20px;    
+    margin-left: 20px;
     height: 3rem;
-
-    &:hover {      
-      border-bottom: 3px solid ${(props) => props.theme.colors.text_details};
-    }
   }
 
   & .socialContainer {
@@ -99,7 +93,7 @@ export const Header = styled.header`
 
     & .flags img {
       width: 48px;
-      height: 45px;      
+      height: 45px;
     }
   }
 
@@ -133,7 +127,7 @@ export const Header = styled.header`
 
     & .flags img {
       width: 25px;
-      height: 23px;      
+      height: 23px;
     }
 
     & .flags {
@@ -146,7 +140,7 @@ export const Header = styled.header`
     padding: 0 4rem 0 2rem;
   }
 
-  @media (max-width: 500px)  {
+  @media (max-width: 500px) {
     & .navbar {
       font-size: 16px;
     }
@@ -155,7 +149,7 @@ export const Header = styled.header`
       margin-left: 8px;
     }
 
-    & .flags {     
+    & .flags {
       margin-left: 0.5rem;
     }
   }
@@ -168,7 +162,7 @@ export const Header = styled.header`
       margin-top: 22px;
       font-size: 15px;
       min-width: 15%;
-    }  
+    }
 
     & .socialContainer {
       margin-left: 1rem;
@@ -180,12 +174,12 @@ export const Header = styled.header`
     }
 
     & .flags {
-      padding-bottom: 0.7rem;     
+      padding-bottom: 0.7rem;
     }
 
     & .flags img {
       width: 22px;
-      height: 19px;      
+      height: 19px;
     }
 
     & .themeBtn {
@@ -194,7 +188,7 @@ export const Header = styled.header`
     }
   }
 
-  @media (max-width: 375px) {    
+  @media (max-width: 375px) {
     padding: 0 2rem;
     height: 50px;
 
@@ -217,19 +211,19 @@ export const Header = styled.header`
       font-size: 20px;
     }
 
-    & .flags {      
+    & .flags {
       margin-left: 0.5rem;
     }
 
     & .flags img {
       width: 22px;
-      height: 19px;      
+      height: 19px;
     }
 
     & button {
       font-size: 22px;
     }
-  } 
+  }
 
   @media (max-width: 360px) {
     & button {
@@ -239,7 +233,7 @@ export const Header = styled.header`
     & .navbar a {
       height: 2rem;
     }
-    
+
     & .flags {
       padding-bottom: 1.7rem;
       margin-left: 0.5rem;
