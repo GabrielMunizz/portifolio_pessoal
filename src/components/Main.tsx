@@ -24,9 +24,9 @@ const Main = () => {
             : eVersion.professional.map((prof, i) => <h3 key={i}>{prof}</h3>)}
         </div>
         <div className="contactContainer">
-          <Link to="/contact" onClick={() => handleClick("/contact")}>
-            {isBr ? ptVersion.contact : eVersion.contact}
-          </Link>
+          <a href="./assets/CV_Muniz_Atualizado.pdf" download>
+            Download CV
+          </a>
         </div>
       </S.Aside>
       <section className="mainContent">
