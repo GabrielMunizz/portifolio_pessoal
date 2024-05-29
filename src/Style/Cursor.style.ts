@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Cursor = styled(motion.li)`
   position: absolute;
   z-index: 0;
-  height: 4rem;
+  height: 3rem;
   border-radius: 99px;
-  background-color: ${(props) => props.theme.colors.main_text_color};
+  background-color: ${(props) => props.theme.colors.text_details};
 `;
