@@ -1,57 +1,44 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Contact = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: flex-start;
-width: 100%;
-height: calc(100vh - 100px);
-
-@media (max-width: 350px) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-`
+  width: 100%;
+  height: 5rem;
+  background-color: ${(props) => props.theme.colors.footer_background};
+`;
 
 export const ContactSection = styled.section`
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
-width: 400px;
-height: 200px;
-border: 1px solid ${(props) => props.theme.colors.main_text_color};
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 200px;
 
-& span {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-}
-
-& div h4 {
-margin: 8px;
-}
-
-& div a {
-color: ${(props) => props.theme.colors.text_details};
-};
-
-@media (max-width: 500px) {
-  width: 20rem;
-  height: 10rem;
-  margin-top: 1rem;
+  & div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
 
   & span {
-    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
-  & h4 {
-    font-size: 0.8rem;
+  & div h4 {
+    font-size: 1.2rem;
+    margin: 8px;
+    color: #fff;
   }
-}
 
-@media (max-width: 340px) {  
-  width: 16rem;
-}
-`
+  & div a {
+    color: ${(props) => props.theme.colors.text_details};
+  }
+`;

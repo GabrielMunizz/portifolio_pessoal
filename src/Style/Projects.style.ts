@@ -6,26 +6,13 @@ export const Projects = styled.section`
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 1rem;
+  height: 40rem;
 
   & .selectContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-  }
-
-  @media (max-width: 500px) {
-    & .selectContainer {
-      padding: 0 1rem;
-      font-size: 0.8rem;
-    }
-  }
-
-  @media (max-width: 350px) {
-    & .selectContainer {
-      font-size: 0.7rem;
-    }
   }
 `;
 export const ProjectCard = styled.div`
@@ -34,29 +21,29 @@ export const ProjectCard = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 2rem 0;
+  margin: 1rem 0;
 
   & .projectDataContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 35rem;
+    height: 34rem;
   }
 
   & .projectTitleContainer h1 {
-    color: ${(props) => props.theme.colors.text_details};
+    color: ${(props) => props.theme.colors.project_title};
   }
 
   & .projectTitleContainer,
   .projectDataContainer img {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
   }
 
   & .projectDataContainer img {
     width: 50rem;
     height: 20rem;
-    border-radius: 5px;
+    border-radius: 7px;
   }
 
   & .description {
@@ -80,7 +67,7 @@ export const ProjectCard = styled.div`
   & .linksContainer a {
     text-decoration: none;
     font-size: 1.2rem;
-    color: #fff;
+    color: ${(props) => props.theme.colors.project_buttons_text};
   }
 
   & .linksContainer button {
@@ -88,7 +75,7 @@ export const ProjectCard = styled.div`
     border-radius: 7px;
     width: 6.5rem;
     height: 3rem;
-    background-color: ${(props) => props.theme.colors.footer_background};
+    background-color: ${(props) => props.theme.colors.project_buttons};
     transition: 0.3s ease;
 
     &:hover {

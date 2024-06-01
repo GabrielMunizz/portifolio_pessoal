@@ -7,6 +7,9 @@ export const darkMode = {
     footer_background: "#34353A",
     photo_background: "#34353A",
     text_hover_color: "#000",
+    project_title: "#fff",
+    project_buttons: "#fff",
+    project_buttons_text: "#000",
   },
 };
 
@@ -19,5 +22,8 @@ export const lightMode = {
     footer_background: "#202124",
     photo_background: "#202124",
     text_hover_color: "#fff",
+    project_title: "#000",
+    project_buttons: "#000",
+    project_buttons_text: "#fff",
   },
 };

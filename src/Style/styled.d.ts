@@ -10,6 +10,9 @@ declare module "styled-components" {
       footer_background: string;
       photo_background: string;
       text_hover_color: string;
+      project_title: string;
+      project_buttons: string;
+      project_buttons_text: string;
     };
   }
 }

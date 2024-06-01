@@ -6,7 +6,7 @@ export const ProjectsSliderContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 1rem 0;
+  height: 42rem;
 
   .content {
     display: flex;
@@ -16,7 +16,6 @@ export const ProjectsSliderContainer = styled.div`
     width: 50%;
     height: 45rem;
     border-radius: 7px;
-    margin-top: 1.5rem;
   }
 `;
 
@@ -39,7 +38,6 @@ export const Button = styled.button`
 
   &:hover {
     cursor: pointer;
-    color: #202930;
     transition: 0.3s ease;
   }
 `;
