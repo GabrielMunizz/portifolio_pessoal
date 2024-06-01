@@ -1,43 +1,50 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Projects = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%; 
+  width: 100%;
   margin-top: 1rem;
 
   & .selectContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;      
+    justify-content: space-between;
   }
 
   @media (max-width: 500px) {
-    & .selectContainer {       
-      padding: 0 1rem;    
+    & .selectContainer {
+      padding: 0 1rem;
       font-size: 0.8rem;
     }
   }
 
-  @media (max-width: 350px) {    
-    & .selectContainer {            
+  @media (max-width: 350px) {
+    & .selectContainer {
       font-size: 0.7rem;
     }
   }
-`
-export const ProjectCard = styled.section`
+`;
+export const ProjectCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 2rem 0;  
+  margin: 2rem 0;
 
-  & .projectTitleContainer h1,
-  .projectDataContainer a {
+  & .projectDataContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 35rem;
+  }
+
+  & .projectTitleContainer h1 {
     color: ${(props) => props.theme.colors.text_details};
   }
 
@@ -62,148 +69,31 @@ export const ProjectCard = styled.section`
     color: ${(props) => props.theme.colors.themeBtn_color};
   }
 
-  & .githubLink {
-    margin-top: 1rem;
+  & .linksContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
   }
 
-  @media (max-width: 825px) {
-    & .projectDataContainer img {
-      width: 40rem;
-      height: 15rem;
-    }
-
-    & .description {
-      max-width: 40rem;
-    }
+  & .linksContainer a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
   }
 
-  @media (max-width: 675px) {
-    & .projectDataContainer img {
-      width: 35rem;
-      height: 10rem;
+  & .linksContainer button {
+    border: none;
+    border-radius: 7px;
+    width: 6.5rem;
+    height: 3rem;
+    background-color: ${(props) => props.theme.colors.footer_background};
+    transition: 0.3s ease;
+
+    &:hover {
+      cursor: pointer;
+      border-radius: 0;
     }
-
-    & .description {
-      max-width: 35rem;
-    }
-  }
-
-  @media (max-width: 675px) {
-    & .projectDataContainer img {
-      width: 30rem;
-    }
-
-    & .description {
-      max-width: 30rem;
-      font-size: 0.8rem;
-    }
-
-    & .githubLink {
-      font-size: 0.8rem;
-    }
-  }
-
-  @media (max-width: 500px) {
-    & .projectDataContainer img {
-      width: 25rem;
-    }
-
-    & .description {
-      height: 8rem;
-      max-width: 25rem;
-    }
-
-    & .githubLink {
-      max-width: 2.5rem;
-    }
-  }
-
-  @media (max-width: 425px) {
-
-    & .projectDataContainer {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      height: 30rem;      
-    }
-    
-    & .projectDataContainer img {
-      width: 20rem;
-      margin-bottom: 0.5rem;
-    }
-
-    & .linksContainer {
-      text-align: left;
-      width: 100%;      
-      padding: 0 1rem;
-    }
-
-    & .linksContainer p {
-      font-size: 0.7rem;
-      margin-bottom: 0.5rem;     
-    }
-
-    & .description {      
-      max-width: 20rem;
-    }
-  }
-
-  @media (max-width: 350px) {
-    
-    & .projectDataContainer img {
-      width: 15rem;
-    }
-
-    & .description {      
-      max-width: 15rem;
-    }
-   
-  }
-
-  @media (max-width: 300px) {
-
-    & .description {      
-      font-size: 0.6rem;
-    }   
   }
 `;
-
-export const Categories = styled.div`
-
-  & select {
-    font-size: 1rem;
-  }
-
-  @media (max-width: 675px) {
-    & select {
-    font-size: 0.8rem;
-    }
-  }
-
-  @media (max-width: 350px) {
-    & select {
-    font-size: 0.7rem;
-    }
-  }
-`
-
-export const OrderBy = styled.div`
-   
-   & select {
-    font-size: 1rem;
-  }
-
-  @media (max-width: 675px) {
-    & select {
-    font-size: 0.8rem;
-    }
-  }
-
-  @media (max-width: 350px) {
-    & select {
-    font-size: 0.7rem;
-    }
-  }
-`

@@ -54,7 +54,7 @@ function App() {
             path="/"
             element={<Layout toggleTheme={toggleTheme} isDark={isDark} />}
           >
-            <Route index path="/home" element={<Home />} />
+            <Route index path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/aboutme" element={<AboutMe />} />
