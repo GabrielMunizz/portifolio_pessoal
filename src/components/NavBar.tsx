@@ -1,35 +1,25 @@
-import * as S from "../Style/NavBar.style";
-import Cursor from "./Cursor";
-import { useContext, useState } from "react";
-import { PositionType } from "../assets/types";
-import Tab from "./Tab";
-import applicationTexts from "../assets/applicationTexts";
-import PortifolioContext from "../context/PortifolioContext";
+import { useContext } from "react";
+import FlipTab from "./FlipTab";
+import PorfolioContext from "@/app/context/PortfolioContext";
 
-const NavBar = () => {
-  const initialPosition = {
-    width: 0,
-    left: 0,
-    opacity: 0,
-  };
-  const [position, setPosition] = useState<PositionType>(initialPosition);
-  const { isBr } = useContext(PortifolioContext);
-  const { eVersion, ptVersion } = applicationTexts;
-  const { header: ptHeader } = ptVersion;
-  const { header: eHeader } = eVersion;
-
+export default function NavBar() {
+  const { homeRef, projectsRef, contactMeRef } = useContext(PorfolioContext);
+  
   return (
-    <S.Nav>
-      <Tab setPosition={setPosition}>Home</Tab>
-      <Tab setPosition={setPosition}>
-        {isBr ? ptHeader.projects : eHeader.projects}
-      </Tab>
-      <Tab setPosition={setPosition}>
-        {isBr ? ptHeader.contact : eHeader.contact}
-      </Tab>
-      <Cursor position={position} />
-    </S.Nav>
+    <nav
+      className="
+        flex fixed justify-center items-center 
+        w-[90%] border-2 border-white 
+        mt-4 min-h-10 rounded-lg bg-black 
+        z-50 md:min-h-20 
+        lg:w-4/5 xl:w-3/5 2xl:w-1/3
+      "
+    >
+      <ul className="flex flex-row justify-around min-w-full">
+        <FlipTab targetRef={homeRef}>Home</FlipTab>
+        <FlipTab targetRef={projectsRef}>Projects</FlipTab>
+        <FlipTab targetRef={contactMeRef}>Contact-me</FlipTab>
+      </ul>
+    </nav>
   );
-};
-
-export default NavBar;
+}
