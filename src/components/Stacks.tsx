@@ -61,6 +61,8 @@ export default function Stacks() {
           md:pl-4 md:mb-0 md:text-[3rem] 
           text-center h-[4rem] 
           lg:text-[2.5rem] lg:mb-[-2rem]
+          xl:block
+          2xl:mb-0
         "
       >
         Stacks:
