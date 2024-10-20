@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfólio
 
-## Getting Started
+## Sobre o portfólio:
 
-First, run the development server:
+![port_preview.png](./Portfolio_Thumbs/port_preview.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Este portfólio foi desenvolvido com as seguintes tecnologias:
+
+- **Next.js**: Para uma experiência de navegação rápida e eficiente.
+- **Tailwind CSS**: Para estilização customizada e responsiva.
+- **Framer Motion**: Para animações suaves e interativas.
+
+O portfólio inclui:
+
+- Barra de navegação com três seções: **Home**, **Projects**, e **ContactMe**.
+- **Home**: Página principal onde tem um breve resumo sobre mim e as stacks que domino.
+- **Projetos**: Uma lista de projetos com links para o repositório, deploy e uma thumbnail de cada projeto.
+- **ContactMe**: Links diretos para meu LinkedIn, GitHub, WhatsApp, e-mail e um botão para download do currículo.
+- **Stacks**: Um carrossel de stacks que desacelera ao passar o mouse sobre as stacks.
+
+---
+
+## Estrutura do Portfólio
+
+### **Home**
+
+A página inicial traz uma introdução sobre mim e um **Stacks Carousel** animado utilizando o Framer Motion. Quando o usuário passa o mouse sobre uma stack, o carrossel desacelera, destacando o nome da tecnologia que está em foco.
+
+- **Tecnologias exibidas**: React, Node.js, Django, TypeScript, Java, Docker, MySQL, PostgreSQL, Redux e etc.
+- **Animação**: Criei uma experiência interativa com animação suave ao passar o mouse sobre as stacks.
+
+![stacks_carousel.png](./Portfolio_Thumbs/stacks_carousel.png)
+
+---
+
+### Projects
+
+Nesta seção, exibo os projetos que já desenvolvi, com uma breve descrição, links para o repositório no GitHub, deploy, e uma thumbnail ilustrando cada projeto.
+
+![projects_page.png](./Portfolio_Thumbs/projects_page.png)
+
+---
+
+### ContactMe
+
+Na página de contato, há links diretos para as minhas redes profissionais e um botão de download para o meu currículo em PDF.
+
+Lista de links disponíveis:
+
+- [**LinkedIn**](https://www.linkedin.com/in/gabriel-muniz-dev/)
+- [**GitHub**](https://github.com/GabrielMunizz)
+- [**Whatsapp**](https://api.whatsapp.com/send?phone=5532984863437)
+- [**E-mail**](mailto:gabrielmfd@gmail.com)
+- **Download do Currículo**: Um botão que baixa o meu currículo atualizado.
+
+![contact_me_page.png](./Portfolio_Thumbs/contact_me_page.png)
+
+---
+
+## Tecnologias Utilizadas
+
+- **Next.js**: Framework de React que permite criação de aplicações web rápidas com renderização do lado do servidor (SSR).
+- **Tailwind CSS**: Framework utilitário para construir interfaces rápidas e responsivas.
+- **Framer Motion**: Biblioteca de animações para React.
+
+---
+
+## Como Executar o Projeto Localmente
+
+1. Clone este repositório:
+
+```jsx
+git clone https://github.com/GabrielMunizz/portfolio2.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Entre na pasta do projeto:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```jsx
+cd portfolio2
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Instale as dependências:
 
-## Learn More
+```jsx
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+1. Execute o projeto:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```jsx
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Abra o navegador em:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```jsx
+http://localhost:3000
+```
