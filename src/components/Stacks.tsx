@@ -58,10 +58,11 @@ export default function Stacks() {
         className="
           bebas hidden 
           text-[1.5rem] 
-          text-center h-[4rem] 
-          h800:mb-[-1.5rem] h800:block 
+          text-center h-[4rem]
+          sm:block sm:text-[2rem]
+          h800:mb-[-1.5rem] 
           md:mb-0 md:text-[3rem] md:block  
-          lg:text-[1.8rem] lg:mb-[-2rem] lg:ml-[3rem] 
+          lg:ml-[3rem] 
           xl:text-[2rem] xl:ml-0
           2xl:text-[3rem] 2xl:mb-0
         "

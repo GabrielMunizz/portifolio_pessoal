@@ -13,7 +13,7 @@ export default function NavBar() {
         mt-4 min-h-10 rounded-lg bg-black 
         sm:w-[80%]
         md:min-h-20 
-        lg:w-[50%] lg:min-h-[8%] 
+        lg:w-[70%] lg:min-h-[6%] 
         xl:w-[60%] 
         2xl:w-[40%]
       "

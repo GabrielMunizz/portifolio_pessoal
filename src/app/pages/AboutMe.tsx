@@ -11,7 +11,7 @@ export default function AboutMe() {
   const { homeRef } = useContext(PorfolioContext);
   
   return (
-    <Container containerRef={homeRef}>
+    <Container containerRef={homeRef}>     
       <div className="
           flex flex-col relative 
           items-center w-full h-full 
@@ -19,7 +19,7 @@ export default function AboutMe() {
           lg:px-[5rem]
           xl:px-4
           xl:w-[60%] xl:ml-[2rem]
-          2xl:w-[40%]
+          2xl:w-[40%]          
         ">
         <Description />
         <div className="
@@ -60,17 +60,18 @@ export default function AboutMe() {
         />
         <div className="
             hidden absolute 
-            left-[-1%] 
+            left-0
             w-[50%] h-full 
             bg-gradient-to-r from-black 
             via-black  
             to-transparent z-[15]
             xl:block xl:via-black/80
             xl:h-[99.9%]
-            2xl:left-0 2xl:h-full            
+            2xl:left-0 2xl:h-full         
           " 
         />
       </div>
+      
 
       <Image
         className="
@@ -90,16 +91,19 @@ export default function AboutMe() {
           justify-center items-start 
           w-full bottom-0 z-40 
           md:flex md:pl-[3%]
-          lg:mb-[1rem] xl:mb-0
+          lg:mb-[1rem] lg:bottom-[5%]
+          xl:mb-0 xl:bottom-0
         ">
         <Stacks />
         <div
           className="
             absolute bg-gradient-to-r 
-            w-[12%] h-[70%]
+            w-[12%] h-[70%]                        
             from-black via-black 
             to-transparent z-10
-            top-[30%] left-0                                                         
+            top-[15%]
+            sm:top-[30%] left-0
+            lg:left-[1%]                                                                 
           "
         />
 
@@ -109,7 +113,9 @@ export default function AboutMe() {
             w-[12%] h-[70%]
             from-black via-black 
             to-transparent z-10 
-            top-[30%] right-0
+            top-[15%] right-0
+            sm:top-[30%]
+            lg:right-[1%]
             xl:right-[45%]                     
           "
         />

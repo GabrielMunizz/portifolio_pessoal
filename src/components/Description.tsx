@@ -20,8 +20,7 @@ export default function Description() {
             bebas text-[4rem]
             font-bold mb-[-2.9rem]
             sm:text-[6rem] sm:mb-[-4.3rem] 
-            md:text-[8rem] md:mb-[-5.8rem] 
-            lg:mb-[-4.3rem] lg:text-[6rem]
+            md:text-[8rem] md:mb-[-5.8rem]            
             2xl:mb-[-5.8rem] 2xl:text-[8rem]
           "
         >
@@ -32,8 +31,7 @@ export default function Description() {
             bebas text-[4rem] text-purple-600
             font-bold mb-[-1.5rem]
             sm:text-[6rem] sm:mb-[-2.5rem]
-            md:text-[8rem] md:mb-[-3rem]          
-            lg:text-[6rem] lg:mb-[-2rem]
+            md:text-[8rem] md:mb-[-3rem]           
             2xl:text-[8rem]  
           "
         >
@@ -49,9 +47,8 @@ export default function Description() {
           bebas text-[1.12rem] 
           sm:text-[1.3rem] 
           md:text-[1.5rem] md:leading-9                              
-          lg:leading-7 lg:mt-[2rem]
-          lg:w-[50%]
-          xl:w-full xl:leading-8           
+          lg:leading-8 lg:w-[80%] lg:text-[2rem] lg:mt-[1rem]
+          xl:w-full xl:text-[1.5rem] xl:leading-6 xl:mt-[3rem]       
           2xl:text-[1.7rem] 2xl:leading-9 2xl:mt-0
         "
       >
