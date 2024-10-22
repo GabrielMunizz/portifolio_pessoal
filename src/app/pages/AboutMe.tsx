@@ -26,10 +26,11 @@ export default function AboutMe() {
             absolute top-16 w-[20rem] h-[20rem]
             rounded-[50%] overflow-hidden z-0
             opacity-30
-            md:w-[30rem] md:top-3 md:left-0
-            md:h-[35rem]
+            md:w-[25rem] md:top-3 md:left-4
+            md:h-[30rem]
             lg:left-[5rem]
-            xl:left-0
+            xl:left-4 xl:w-[20rem] xl:h-[22rem] 
+            2xl:w-[30rem] 2xl:h-[35rem] 
           ">
           <Image 
             className="w-full h-full" 
@@ -92,7 +93,8 @@ export default function AboutMe() {
           w-full bottom-0 z-40 
           md:flex md:pl-[3%]
           lg:mb-[1rem] lg:bottom-[5%]
-          xl:mb-0 xl:bottom-0
+          xl:mb-0 xl:bottom-0 xl:pl-[4%]
+          2xl:pl-[2%]
         ">
         <Stacks />
         <div

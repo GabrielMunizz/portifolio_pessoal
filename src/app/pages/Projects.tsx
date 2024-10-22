@@ -26,11 +26,11 @@ export default function Projects() {
 
   return (
     <Container containerRef={projectsRef}>
-      <div
+      <div        
         className="
           flex flex-col justify-start w-full h-full 
           md:flex-row md:justify-around 
-          md:items-center md:relative
+          md:items-center md:relative                     
         "
       >
         <AnimatePresence>
@@ -38,9 +38,10 @@ export default function Projects() {
             id="projects"
             className="
               flex flex-col justify-around 
-              w-[100%] h-full lg:w-[50%] 
-              lg:justify-start lg:mt-[2rem] 
-              2xl:w-[40%] 2xl:mt-0
+              w-[100%] h-full
+              lg:w-[50%] lg:justify-start lg:mt-[2rem]
+              xl:mt-0
+              2xl:w-[40%] 2xl:mt-0            
             "
           >
             <div
@@ -63,8 +64,9 @@ export default function Projects() {
             <div
               className="
                 flex flex-col items-center w-full h-[30%] 
-                md:h-[40%] xl:hidden 
-                h800:my-[-10%] md:my-0
+                h800:my-[-10%]
+                md:my-0 md:h-[40%] 
+                lg:hidden
               "
             >
               <motion.div
@@ -93,9 +95,9 @@ export default function Projects() {
               className="
                 flex flex-col justify-start items-start 
                 h-[20rem] p-[1rem] 
-                lg:h-[25rem] lg:mt-[5rem] 
-                xl:h-[30rem] xl:py-[4rem] 
-                2xl:p-2 2xl:h-[24rem] 2xl:mt-[8rem]                
+                lg:h-[25rem] lg:mt-[2rem]
+                xl:h-[30rem] xl:mt-0 xl:py-[4rem]
+                2xl:p-2 2xl:h-[24rem] 2xl:mt-[8rem]            
               "
             >
               <ProjectDescription>
@@ -112,7 +114,7 @@ export default function Projects() {
 
           <div
             className="
-              xl:flex flex-col justify-center items-center 
+              lg:flex flex-col justify-center items-center 
               w-[50%] h-[80%] 
               my-[auto] hidden
             "

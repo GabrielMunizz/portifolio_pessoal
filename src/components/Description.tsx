@@ -5,7 +5,7 @@ export default function Description() {
       className="
         flex flex-col relative justify-start 
         w-full h-full mb-[2rem]
-        md:px-0 z-10
+        md:px-0 z-10        
       "
     >
       <div
@@ -20,7 +20,8 @@ export default function Description() {
             bebas text-[4rem]
             font-bold mb-[-2.9rem]
             sm:text-[6rem] sm:mb-[-4.3rem] 
-            md:text-[8rem] md:mb-[-5.8rem]            
+            md:text-[8rem] md:mb-[-5.8rem]
+            xl:text-[5rem] xl:mb-[-3.6rem]                      
             2xl:mb-[-5.8rem] 2xl:text-[8rem]
           "
         >
@@ -31,7 +32,8 @@ export default function Description() {
             bebas text-[4rem] text-purple-600
             font-bold mb-[-1.5rem]
             sm:text-[6rem] sm:mb-[-2.5rem]
-            md:text-[8rem] md:mb-[-3rem]           
+            md:text-[8rem] md:mb-[-3rem] 
+            xl:text-[5rem] xl:mb-[-1.6rem]
             2xl:text-[8rem]  
           "
         >
@@ -46,10 +48,10 @@ export default function Description() {
         className="
           bebas text-[1.12rem] 
           sm:text-[1.3rem] 
-          md:text-[1.5rem] md:leading-9                              
-          lg:leading-8 lg:w-[80%] lg:text-[2rem] lg:mt-[1rem]
-          xl:w-full xl:text-[1.5rem] xl:leading-6 xl:mt-[3rem]       
-          2xl:text-[1.7rem] 2xl:leading-9 2xl:mt-0
+          md:text-[1.5rem] md:leading-9                    
+          lg:leading-8 lg:w-[70%] lg:text-[1.7rem] lg:mt-[1rem]
+          xl:w-full xl:text-[1.5rem] xl:leading-5 xl:mt-[0.5rem]       
+          2xl:leading-7 2xl:mt-0
         "
       >
         Passionate about technology, music and games. I also try my luck in the

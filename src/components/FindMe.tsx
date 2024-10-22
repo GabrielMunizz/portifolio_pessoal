@@ -19,7 +19,7 @@ export default function FindMe() {
           mb-[1rem] 
           md:mb-[4rem] 
           xl:w-[80%]
-          xl:pl-[2rem]
+          xl:pl-[2rem] xl:mb-[2.5rem]
           2xl:pl-[0rem]
           2xl:w-[60%] 
          "
@@ -43,9 +43,10 @@ export default function FindMe() {
           contact{" "}
           <span
             className="
-              bebas text-[4.5rem] md:text-[8rem] 
-              font-bold md:mb-[-5.8rem] text-purple-600
-              lg:text-[6rem] lg:mb-[-3.8rem]
+              bebas text-[4.5rem] font-bold text-purple-600
+              md:text-[8rem] 
+              md:mb-[-5.8rem] 
+              lg:text-[6rem] lg:mb-[-3.8rem]              
             "
           >
             me
@@ -55,8 +56,10 @@ export default function FindMe() {
       </div>
       <div
         className="
-          md:pl-5 mt-[-3rem] h800:mt-0 
-          xl:w-[70%] xl:pl-0 xl:mt-0          
+          mt-[-3rem]
+          h800:mt-0
+          md:pl-5
+          xl:w-[70%] xl:pl-0 xl:mt-0        
         "
       >
         <LinkedinButton />
