@@ -19,7 +19,8 @@ export default function AboutMe() {
           lg:px-[5rem]
           xl:px-4
           xl:w-[60%] xl:ml-[2rem]
-          2xl:w-[40%]          
+          2xl:w-[55%]
+          3xl:w-[40%]     
         ">
         <Description />
         <div className="
@@ -91,10 +92,11 @@ export default function AboutMe() {
           flex-col absolute
           justify-center items-start 
           w-full bottom-0 z-40 
-          md:flex md:pl-[3%]
-          lg:mb-[1rem] lg:bottom-[5%]
+          md:flex md:pl-[2%]
+          lg:mb-[1rem] lg:bottom-[5%] lg:pl-[3%]
           xl:mb-0 xl:bottom-0 xl:pl-[4%]
-          2xl:pl-[2%]
+          2xl:pl-[4%]
+          3xl:pl-[3%]
         ">
         <Stacks />
         <div

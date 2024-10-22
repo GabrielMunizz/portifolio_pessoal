@@ -49,9 +49,10 @@ export default function Stacks() {
     <div
       className="
         flex flex-col justify-center items-center 
-        md:items-start md:w-[98%]                
+        md:items-start md:w-[98%] md:h-[12rem]
+        lg:h-[auto]              
         xl:mb-[0.2rem] xl:w-[50%]
-        2xl:mb-[2rem]        
+        2xl:mb-[2rem]     
       "
     >
       <h2
@@ -61,10 +62,10 @@ export default function Stacks() {
           text-center h-[4rem]
           sm:block sm:text-[2rem]
           h800:mb-[-1.5rem] 
-          md:mb-0 md:text-[3rem] md:block  
-          lg:ml-[3rem] 
+          md:block md:text-[2.5rem] md:mb-0  
+          lg:text-[3rem] lg:ml-[3rem] 
           xl:text-[2rem] xl:ml-0
-          2xl:text-[3rem] 2xl:mb-0
+          2xl:text-[2.5rem] 2xl:mb-[-1rem]
         "
       >
         Stacks:

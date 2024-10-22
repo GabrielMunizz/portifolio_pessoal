@@ -4,8 +4,8 @@ export default function Description() {
     <div
       className="
         flex flex-col relative justify-start 
-        w-full h-full mb-[2rem]
-        md:px-0 z-10        
+        w-full h-full mb-[2rem] z-10
+        md:px-0
       "
     >
       <div
@@ -22,7 +22,7 @@ export default function Description() {
             sm:text-[6rem] sm:mb-[-4.3rem] 
             md:text-[8rem] md:mb-[-5.8rem]
             xl:text-[5rem] xl:mb-[-3.6rem]                      
-            2xl:mb-[-5.8rem] 2xl:text-[8rem]
+            2xl:text-[7rem] 2xl:mb-[-5rem]
           "
         >
           Gabriel
@@ -34,7 +34,7 @@ export default function Description() {
             sm:text-[6rem] sm:mb-[-2.5rem]
             md:text-[8rem] md:mb-[-3rem] 
             xl:text-[5rem] xl:mb-[-1.6rem]
-            2xl:text-[8rem]  
+            2xl:text-[7rem] 2xl:mb-[-2rem]
           "
         >
           Muniz
@@ -47,11 +47,11 @@ export default function Description() {
       <p
         className="
           bebas text-[1.12rem] 
-          sm:text-[1.3rem] 
-          md:text-[1.5rem] md:leading-9                    
-          lg:leading-8 lg:w-[70%] lg:text-[1.7rem] lg:mt-[1rem]
-          xl:w-full xl:text-[1.5rem] xl:leading-5 xl:mt-[0.5rem]       
-          2xl:leading-7 2xl:mt-0
+          sm:text-[1.3rem] sm:mt-[3rem]
+          md:w-[70%] md:text-[1.2rem] md:mt-[2rem] md:leading-7 
+          lg:w-[65%] lg:text-[1.3rem] lg:mt-[2.5rem] lg:leading-6 
+          xl:w-full xl:text-[1.5rem] xl:leading-5 xl:mt-[0.5rem]      
+          2xl:leading-7 2xl:mt-4
         "
       >
         Passionate about technology, music and games. I also try my luck in the

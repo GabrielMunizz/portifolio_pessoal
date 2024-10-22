@@ -96,7 +96,7 @@ export default function Projects() {
                 flex flex-col justify-start items-start 
                 h-[20rem] p-[1rem] 
                 lg:h-[25rem] lg:mt-[2rem]
-                xl:h-[30rem] xl:mt-0 xl:py-[4rem]
+                xl:h-[30rem] xl:mt-[1rem] xl:py-[4rem]
                 2xl:p-2 2xl:h-[24rem] 2xl:mt-[8rem]            
               "
             >
