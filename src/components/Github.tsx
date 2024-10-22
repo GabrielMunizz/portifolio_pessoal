@@ -17,20 +17,20 @@ export default function Github() {
           text-[1.2rem]
           hover:text-purple-600 
           transition ease-in delay-50
-          md:text-[2.5rem]
-          xl:text-[1.5rem]
-          2xl:text-[2.2rem]
+          md:text-[2rem]
+          lg:text-[1.5rem]          
+          3xl:text-[2.2rem]
           "
         href="https://github.com/GabrielMunizz"
         target="_blank"
         rel="noopener noreferrer"
       >
         <SiGithub className="
-            text-[2.5rem] 
-            md:text-[3.5rem]
-            xl:text-[2.5rem]
-            2xl:text-[3.5rem]
-            text-[#fff] mr-4" 
+            text-[2.5rem] text-[#fff] mr-4
+            md:text-[2rem]
+            lg:text-[2.5rem]            
+            3xl:text-[3.5rem]
+            " 
         />
         github.com/GabrielMunizz
       </a>

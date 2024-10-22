@@ -27,9 +27,9 @@ export default function ExternalLink({
           text-[1.2rem]
           hover:text-purple-600 
           transition ease-in delay-50
-          md:text-[2.5rem]
-          xl:text-[1.5rem]
-          2xl:text-[2.2rem]
+          md:text-[2rem]
+          lg:text-[1.5rem]          
+          3xl:text-[2.2rem]
         "
         href={link}
         target="_blank"

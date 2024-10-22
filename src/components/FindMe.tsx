@@ -10,8 +10,8 @@ export default function FindMe() {
     <div
       className="
         flex flex-col justify-start items-center 
-        w-full h-full z-10 
-        xl:w-[45%]        
+        w-full h-full z-10
+        lg:w-[45%]    
       "
     >
       <div 
@@ -19,9 +19,10 @@ export default function FindMe() {
           mb-[1rem] 
           md:mb-[4rem] 
           xl:w-[80%]
-          xl:pl-[2rem] xl:mb-[2.5rem]
-          2xl:pl-[0rem]
-          2xl:w-[60%] 
+          lg:pl-[3rem] xl:mb-[2.5rem]
+          xl:pl-[2rem]    
+          2xl:w-[90%] 2xl:pl-[3.5rem]
+          3xl:w-[60%] 3xl:pl-0
          "
         >
         <h2
@@ -72,9 +73,9 @@ export default function FindMe() {
             className="
               text-[2.5rem] 
               text-white mr-4
-              md:text-[3.5rem]
-              xl:text-[2.5rem]
-              2xl:text-[3.5rem]
+              md:text-[2rem]
+              lg:text-[2.5rem]            
+              3xl:text-[3.5rem]
               " 
           />
         </ExternalLink>
@@ -87,9 +88,9 @@ export default function FindMe() {
               text-[2.5rem] 
               text-[#2cd16e] 
               mr-4
-              md:text-[3.5rem]
-              xl:text-[2.5rem]
-              2xl:text-[3.5rem]
+              md:text-[2rem]
+              lg:text-[2.5rem]            
+              3xl:text-[3.5rem]
               " 
           />
         </ExternalLink>
