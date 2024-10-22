@@ -2,7 +2,12 @@ import { motion } from "framer-motion";
 
 export default function ProjectDescription({ children }: { children: string }) {
   return (
-    <div className="h-[14rem] xl:h-auto 2xl:w-[80%] mb-[2rem]">
+    <div className="
+      h-[14rem] mb-[2rem]
+      xl:h-auto       
+      3xl:w-[80%] 
+      "
+    >
       <motion.span className="
         bebas text-[0.95rem] text-purple-600
         h800:text-[1rem] 

@@ -95,9 +95,11 @@ export default function Projects() {
               className="
                 flex flex-col justify-start items-start 
                 h-[20rem] p-[1rem] 
-                lg:h-[25rem] lg:mt-[2rem]
+                lg:h-[25rem] lg:mt-[3rem]
                 xl:h-[30rem] xl:mt-[1rem] xl:py-[4rem]
-                2xl:p-2 2xl:h-[24rem] 2xl:mt-[8rem]            
+                2xl:p-2 2xl:h-[24rem] 2xl:mt-[2.5rem]
+                3xl:mt-[3rem]
+                ultraW:mt-[6rem]         
               "
             >
               <ProjectDescription>

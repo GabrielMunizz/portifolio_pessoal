@@ -43,7 +43,7 @@ export default function FlipTab({ children, targetRef }: TabProps) {
         sm:text-[2.5rem] 
         md:text-[3.5rem] md:mt-2        
         xl:text-[4rem]
-        2xl:text-[4.5rem] 
+        3xl:text-[4.5rem]
         hover:cursor-pointer"
       style={{
         lineHeight: 0.9,

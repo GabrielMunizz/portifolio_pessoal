@@ -15,7 +15,8 @@ const config: Config = {
       },
       screens: {
         'h800': {'raw': '(min-height: 800px) and (max-height: 875px)'},
-        '3xl': '1920px'
+        '3xl': '1920px',
+        'ultraW': '2300px',
       }
     },
   },
