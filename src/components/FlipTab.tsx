@@ -37,7 +37,14 @@ export default function FlipTab({ children, targetRef }: TabProps) {
       animate={isTaped ? "hovered" : "initial"}
       onTapStart={() => setIsTaped(true)}
       onTap={handleTap}
-      className="relative block bebas overflow-hidden whitespace-nowrap uppercase mt-1 text-3xl sm:text-7xl md:text8xl md:mt-2 lg:9xl hover:cursor-pointer"
+      className="
+        relative block bebas overflow-hidden whitespace-nowrap uppercase mt-1 
+        text-3xl 
+        sm:text-[2.5rem] 
+        md:text-[3.5rem] md:mt-2        
+        xl:text-[4rem]
+        2xl:text-[4.5rem] 
+        hover:cursor-pointer"
       style={{
         lineHeight: 0.9,
       }}

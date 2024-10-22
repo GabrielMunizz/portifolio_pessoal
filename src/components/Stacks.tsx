@@ -49,20 +49,21 @@ export default function Stacks() {
     <div
       className="
         flex flex-col justify-center items-center 
-        md:items-start md:w-[98%] 
-        lg:w-[39rem] 2xl:w-[50rem] 
-        2xl:mb-[2rem]
+        md:items-start md:w-[98%]                
+        xl:mb-[0.2rem] xl:w-[50%]
+        2xl:mb-[2rem]        
       "
     >
       <h2
         className="
-          bebas hidden h800:block 
-          text-[1.5rem] h800:mb-[-1.5rem] 
-          md:pl-4 md:mb-0 md:text-[3rem] 
+          bebas hidden 
+          text-[1.5rem] 
           text-center h-[4rem] 
-          lg:text-[2.5rem] lg:mb-[-2rem]
-          xl:block
-          2xl:mb-0
+          h800:mb-[-1.5rem] h800:block 
+          md:mb-0 md:text-[3rem] md:block  
+          lg:text-[1.8rem] lg:mb-[-2rem] lg:ml-[3rem] 
+          xl:text-[2rem] xl:ml-0
+          2xl:text-[3rem] 2xl:mb-0
         "
       >
         Stacks:
@@ -70,10 +71,14 @@ export default function Stacks() {
 
       <div
         className="
-          w-[99%] md:w-[99%] 
-          md:mx-[auto] relative 
-          overflow-hidden h-[7rem] 
-          h800:h-[8rem] md:h-[10rem]
+          flex items-center
+          relative overflow-hidden
+          w-[99%] h-[7rem]
+          h800:h-[8rem] 
+          md:w-[98%] md:mx-[auto] md:h-[10rem]
+          lg:h-[6.5rem]
+          xl:h-[7rem]
+          2xl:h-[8rem]
         "
       >
         <motion.div
@@ -92,30 +97,7 @@ export default function Stacks() {
           {[...stacks, ...stacks].map((item, i) => (
             <LogoRender key={i} url={item.url} title={item.title} />
           ))}
-        </motion.div>
-
-        <div
-          className="
-            absolute bg-gradient-to-r 
-            from-black via-black/80 
-            to-transparent z-10 
-            h-[70%] md:h-[90%] 
-            top-[10%] left-[-2%] 
-            md:left-[-1%] w-[12%]
-          "
-        />
-
-        <div
-          className="
-            absolute bg-gradient-to-l 
-            from-black via-black 
-            to-transparent z-10 
-            h-[70%] md:h-[90%] 
-            top-[10%] right-[-2%] 
-            md:right-[-4.5%] 
-            lg:right-[-2%] w-[12%]
-          "
-        />
+        </motion.div>       
       </div>
     </div>
   );

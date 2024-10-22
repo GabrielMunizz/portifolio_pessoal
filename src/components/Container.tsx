@@ -22,7 +22,7 @@ export default function Container({
     >
       <div
         className="
-          flex flex-row justify-around items-center relative
+          flex flex-row justify-between items-center relative
           border-2 border-white rounded-lg
           w-[90%] sm:w-[80%] md:w-[90%] lg:w-[95%] xl:w-[95%] 2xl:w-[80%]
           h-[85vh] sm:h-[80vh] md:h-[85vh]

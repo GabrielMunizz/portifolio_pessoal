@@ -4,7 +4,7 @@ export default function Description() {
     <div
       className="
         flex flex-col relative justify-start 
-        w-full h-full mb-[2rem] 
+        w-full h-full mb-[2rem]
         md:px-0 z-10
       "
     >
@@ -17,23 +17,24 @@ export default function Description() {
       >
         <h1
           className="
-            bebas text-[4rem] 
-            md:text-[8rem] lg:text-[6rem] 
-            2xl:text-[8rem] font-bold 
-            mb-[-2.9rem] 
-            md:mb-[-5.8rem] lg:mb-[-4.3rem] 
-            2xl:mb-[-5.8rem]
+            bebas text-[4rem]
+            font-bold mb-[-2.9rem]
+            sm:text-[6rem] sm:mb-[-4.3rem] 
+            md:text-[8rem] md:mb-[-5.8rem] 
+            lg:mb-[-4.3rem] lg:text-[6rem]
+            2xl:mb-[-5.8rem] 2xl:text-[8rem]
           "
         >
           Gabriel
         </h1>
         <h1
           className="
-            bebas text-[4rem] 
-            md:text-[8rem] lg:text-[6rem] 
-            2xl:text-[8rem] text-purple-600 
-            font-bold mb-[-1.5rem] 
-            md:mb-[-3rem] lg:mb-[-2rem]
+            bebas text-[4rem] text-purple-600
+            font-bold mb-[-1.5rem]
+            sm:text-[6rem] sm:mb-[-2.5rem]
+            md:text-[8rem] md:mb-[-3rem]          
+            lg:text-[6rem] lg:mb-[-2rem]
+            2xl:text-[8rem]  
           "
         >
           Muniz
@@ -46,10 +47,12 @@ export default function Description() {
       <p
         className="
           bebas text-[1.12rem] 
-          h800:text-[1.3rem] 
-          md:text-[2.5rem] 
-          lg:text-[1.3rem] 
-          md:leading-9
+          sm:text-[1.3rem] 
+          md:text-[1.5rem] md:leading-9                              
+          lg:leading-7 lg:mt-[2rem]
+          lg:w-[50%]
+          xl:w-full xl:leading-8           
+          2xl:text-[1.7rem] 2xl:leading-9 2xl:mt-0
         "
       >
         Passionate about technology, music and games. I also try my luck in the

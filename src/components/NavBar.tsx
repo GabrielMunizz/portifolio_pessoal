@@ -9,10 +9,13 @@ export default function NavBar() {
     <nav
       className="
         flex fixed justify-center items-center 
-        w-[90%] border-2 border-white 
+        w-[90%] border-2 border-white z-50 
         mt-4 min-h-10 rounded-lg bg-black 
-        z-50 md:min-h-20 
-        lg:w-4/5 xl:w-3/5 2xl:w-1/3
+        sm:w-[80%]
+        md:min-h-20 
+        lg:w-[50%] lg:min-h-[8%] 
+        xl:w-[60%] 
+        2xl:w-[40%]
       "
     >
       <ul className="flex flex-row justify-around min-w-full">

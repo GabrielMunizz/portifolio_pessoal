@@ -15,15 +15,21 @@ export default function AboutMe() {
       <div className="
           flex flex-col relative 
           items-center w-full h-full 
-          z-10 xl:w-[60%] 2xl:w-[40%] 
-          px-4
+          z-10 px-4
+          lg:px-[5rem]
+          xl:px-4
+          xl:w-[60%] xl:ml-[2rem]
+          2xl:w-[40%]
         ">
         <Description />
         <div className="
-            absolute top-16 md:top-3 md:left-0 
-            w-[20rem] h-[20rem] md:w-[30rem] 
-            md:h-[35rem] opacity-30 
+            absolute top-16 w-[20rem] h-[20rem]
             rounded-[50%] overflow-hidden z-0
+            opacity-30
+            md:w-[30rem] md:top-3 md:left-0
+            md:h-[35rem]
+            lg:left-[5rem]
+            xl:left-0
           ">
           <Image 
             className="w-full h-full" 
@@ -34,9 +40,9 @@ export default function AboutMe() {
       </div>
 
       <div className="
-          hidden xl:flex flex-col 
+          hidden xl:flex flex-col
           relative justify-start items-center 
-          w-[50%] h-full pl-[10%] 
+          w-[50%] h-full 
           xl:pl-[0%] xl:pt-[0.6px] 
           2xl:pt-[0.3px]
         ">
@@ -47,8 +53,7 @@ export default function AboutMe() {
             md:z-10 md:object-cover 
             md:object-[center_30%] 
             xl:rounded-[5px] xl:w-full 
-            xl:h-full xl:mt-0  
-            2xl:mr-[-6.2rem]
+            xl:h-full xl:mt-0            
           "
           src={colorPhoto}
           alt="Gabriel's picture"
@@ -62,33 +67,52 @@ export default function AboutMe() {
             to-transparent z-[15]
             xl:block xl:via-black/80
             xl:h-[99.9%]
-            2xl:left-0 2xl:h-full
-            
+            2xl:left-0 2xl:h-full            
           " 
         />
       </div>
 
       <Image
         className="
-          absolute rounded-[50%] 
-          w-[7rem] h-[7rem] z-10 
-          object-cover right-[5%] 
-          top-4 md:right-10 
-          md:top-5 md:w-[15rem] 
-          md:h-[15rem] xl:hidden
+          absolute rounded-[50%] object-cover 
+          w-[7rem] h-[7rem] z-10 right-[5%] top-4
+          sm:w-[10rem] sm:h-[10rem]
+          md:right-10 md:top-5 md:w-[15rem] md:h-[15rem]
+          lg:right-[5rem] lg:w-[20rem] lg:h-[20rem] 
+          xl:hidden
         "
         src={colorPhoto}
-        alt="Gabriel's picture"
+        alt="Gabriel's mobile picture"
       />
 
       <div className="
-          md:flex flex-col 
+          flex-col absolute
           justify-center items-start 
-          absolute w-full 
-          bottom-0 2xl:pl-16 
-          z-40
+          w-full bottom-0 z-40 
+          md:flex md:pl-[3%]
+          lg:mb-[1rem] xl:mb-0
         ">
         <Stacks />
+        <div
+          className="
+            absolute bg-gradient-to-r 
+            w-[12%] h-[70%]
+            from-black via-black 
+            to-transparent z-10
+            top-[30%] left-0                                                         
+          "
+        />
+
+        <div
+          className="
+            absolute bg-gradient-to-l 
+            w-[12%] h-[70%]
+            from-black via-black 
+            to-transparent z-10 
+            top-[30%] right-0
+            xl:right-[45%]                     
+          "
+        />
       </div>
     </Container>
   );
