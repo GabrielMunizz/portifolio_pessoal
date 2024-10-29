@@ -3,10 +3,11 @@ import IBGEImg from '../assets/project-thumbs/IBGENews.png';
 import byteForBite from '../assets/project-thumbs/byte-for-bite.jpeg';
 import onlineStoreImg from '../assets/project-thumbs/OnlineStore.png';
 import myToDoImg from '../assets/project-thumbs/todo-image.png';
+import heroStoreImg from '../assets/project-thumbs/hero_store-api-thumb.png';
 
 export const projects = [
   {
-    id: 0,
+    id: 1,
     title: 'Byte-for-Bite',
     image: byteForBite,
     categories: ['All', 'Todas', 'Full-Stack'],
@@ -20,7 +21,7 @@ export const projects = [
     Além disso, você pode alterar sua foto de perfil. Se quiser saber qual receita já foi terminada, basta acessar a página Done Recipes`,
   },
   {
-    id: 1,
+    id: 2,
     title: 'Online Store',
     image: onlineStoreImg,
     categories: ['All', 'Todas', 'Front-End'],
@@ -34,7 +35,7 @@ export const projects = [
     A aplicação é responsiva e possui uma cobertura acima de 90% nos testes.`,
   },
   {
-    id: 2,
+    id: 3,
     title: 'My To-do',
     image: myToDoImg,
     categories: ['All', 'Todas', 'Front-End'],
@@ -46,9 +47,9 @@ export const projects = [
       'completed tasks' section. The application is fully responsive, 
       ensuring an optimal experience on mobile devices.`,
     descriptionPT: ``,
-  },  
+  },
   {
-    id: 3,
+    id: 4,
     title: 'TrybeTunes',
     image: tunesImg,
     categories: ['All', 'Todas', 'Front-End'],
@@ -64,7 +65,7 @@ export const projects = [
     pode editar o perfil pessoal`,
   },
   {
-    id: 4,
+    id: 5,
     title: 'IBGE News',
     image: IBGEImg,
     categories: ['All', 'Todas', 'Front-End'],
@@ -78,5 +79,19 @@ export const projects = [
     publicadas no site do IBGE. Possui um recurso de "dark mode", "favoritos" e é possível filtrar por "notícias" e 
     "releases". O usuário também pode acessar a versão completa da notícia ou release clicando
     no botão "Leia a notícia aqui"`,
-  },  
+  },
+  {
+    id: 6,
+    title: 'Hero Store-API',
+    image: heroStoreImg,
+    categories: ['All', 'Todas', 'Back-End'],
+    url: 'https://github.com/GabrielMunizz/hero-store',
+    deploy: '',
+    descriptionEng: `Hero Store API is a backend project using Node.js and TypeScript for a hero item store, 
+      with Express for routing and Sequelize for managing a MySQL database. 
+      The API supports item and order management, along with JWT-based user authentication. 
+      The project is containerized via Docker for efficient deployment and integration. 
+      It includes unit and integration tests using Jest, ensuring stability and reliability throughout the codebase.`,
+    descriptionPT: ``,
+  },
 ];
